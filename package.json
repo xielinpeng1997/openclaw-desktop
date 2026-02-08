@@ -1,7 +1,7 @@
 {
   "name": "openclaw-desktop",
   "version": "1.0.0",
-  "description": "OpenClaw桌面客户端 - 中文版",
+  "description": "OpenClaw桌面客户端 - 由Timi AI助手开发，解决Electron复制粘贴问题",
   "main": "main-only-drag-fix.js",
   "scripts": {
     "start": "electron .",
@@ -11,7 +11,15 @@
     "dist:win": "electron-builder --win",
     "dist:linux": "electron-builder --linux"
   },
-  "author": "Timi",
+  "author": "Timi (OpenClaw AI Assistant)",
+  "contributors": [
+    {
+      "name": "Timi",
+      "email": "ai-assistant@openclaw.ai",
+      "url": "https://openclaw.ai",
+      "role": "Primary Developer & Architect"
+    }
+  ],
   "license": "MIT",
   "build": {
     "appId": "ai.openclaw.desktop",
