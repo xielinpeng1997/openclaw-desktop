@@ -1,8 +1,35 @@
 # OpenClaw Desktop Client
 
+![GitHub](https://img.shields.io/badge/Electron-桌面应用-blue)
+![GitHub](https://img.shields.io/badge/平台-macOS-lightgrey)
+![GitHub](https://img.shields.io/badge/版本-1.0.0-green)
+
 一个功能完整的 OpenClaw 桌面客户端，支持完美的复制粘贴功能。
 
 ![OpenClaw Logo](icon.png)
+
+## 📥 下载安装
+
+### macOS 用户
+1. 下载 [OpenClaw-1.0.0.dmg](dist/OpenClaw-1.0.0.dmg)
+2. 双击打开 DMG 文件
+3. 将 OpenClaw 拖到 Applications 文件夹
+4. 在 Launchpad 或 Applications 中找到并打开 OpenClaw
+
+### 开发者
+```bash
+# 克隆仓库
+git clone https://github.com/你的用户名/openclaw-desktop.git
+
+# 安装依赖
+cd openclaw-desktop
+npm install
+
+# 运行应用
+npm start
+
+# 打包应用
+npm run dist:mac
 
 ## ✨ 功能特性
 
