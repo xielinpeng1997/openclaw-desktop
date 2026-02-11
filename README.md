@@ -1,11 +1,11 @@
 # OpenClaw Desktop Client
 
 ![GitHub](https://img.shields.io/badge/Electron-桌面应用-blue)
-![GitHub](https://img.shields.io/badge/平台-macOS-lightgrey)
-![GitHub](https://img.shields.io/badge/版本-1.0.0-green)
+![GitHub](https://img.shields.io/badge/平台-macOS%20%7C%20Windows-lightgrey)
+![GitHub](https://img.shields.io/badge/版本-1.1.0-green)
 ![GitHub](https://img.shields.io/badge/开发者-Timi%20AI助手-orange)
 
-一个功能完整的 OpenClaw 桌面客户端，支持完美的复制粘贴功能。
+一个功能完整的 OpenClaw 桌面客户端，支持完美的复制粘贴功能和局域网连接。
 
 ![OpenClaw Logo](icon.png)
 
@@ -32,16 +32,17 @@
 
 ## 📥 下载安装
 
-### macOS 用户
-1. 下载 [OpenClaw-1.0.0.dmg](dist/OpenClaw-1.0.0.dmg)
-2. 双击打开 DMG 文件
-3. 将 OpenClaw 拖到 Applications 文件夹
-4. 在 Launchpad 或 Applications 中找到并打开 OpenClaw
+### 🍎 macOS 用户
+- **安装包**: [OpenClaw-1.0.0.dmg](https://github.com/xielinpeng1997/openclaw-desktop/releases/latest/download/OpenClaw-1.0.0.dmg)
+- **便携版**: [OpenClaw-1.0.0-mac.zip](https://github.com/xielinpeng1997/openclaw-desktop/releases/latest/download/OpenClaw-1.0.0-mac.zip)
 
-### 开发者
+### 🪟 Windows 用户
+- **便携版**: [OpenClaw-1.0.0-win-portable.zip](https://github.com/xielinpeng1997/openclaw-desktop/releases/latest/download/OpenClaw-1.0.0-win-portable.zip)
+
+### 👨‍💻 开发者
 ```bash
 # 克隆仓库
-git clone https://github.com/你的用户名/openclaw-desktop.git
+git clone https://github.com/xielinpeng1997/openclaw-desktop.git
 
 # 安装依赖
 cd openclaw-desktop
@@ -51,15 +52,30 @@ npm install
 npm start
 
 # 打包应用
-npm run dist:mac
+npm run dist:mac    # macOS
+npm run dist:win    # Windows
+npm run dist        # 所有平台
 
 ## ✨ 功能特性
 
+### 🔧 核心功能
 - ✅ **完美复制粘贴支持** - 多层剪贴板回退机制
 - ✅ **自定义应用图标** - 美观的应用图标
-- ✅ **标准 macOS 窗口** - 原生窗口体验
+- ✅ **标准窗口体验** - 原生窗口界面
 - ✅ **预加载脚本优化** - 增强的剪贴板功能
-- ✅ **一键打包安装** - 支持 DMG 和 ZIP 分发
+- ✅ **一键打包安装** - 支持多平台分发
+
+### 🌐 网络连接
+- ✅ **地址配置功能** - 启动时显示地址选择对话框
+- ✅ **自定义输入窗口** - 美观的 HTML 输入界面
+- ✅ **局域网支持** - 支持连接局域网 OpenClaw 服务器
+- ✅ **地址保存** - 自动保存用户配置
+- ✅ **错误处理** - 连接失败时智能提示
+
+### 🎯 使用场景
+1. **本地开发** - `http://127.0.0.1:18789/`
+2. **局域网访问** - `http://192.168.x.x:18789/`
+3. **多环境切换** - 不同服务器地址随时切换
 
 ## 🚀 快速开始
 
@@ -86,13 +102,17 @@ npm run dist
 
 ```
 openclaw-desktop/
-├── main-only-drag-fix.js      # 主应用文件
-├── preload.js                 # 预加载脚本（剪贴板功能）
-├── icon.png                   # 应用图标
-├── loading.html               # 加载页面
-├── package.json               # 项目配置
-├── README.md                  # 项目说明
-└── .gitignore                 # Git 忽略配置
+├── main-fixed-address-config.js  # 主应用文件（支持地址配置）
+├── main-only-drag-fix.js         # 原始主应用文件
+├── main-simple-address-config.js # 简单地址配置版
+├── main-with-address-config.js   # 完整地址配置版
+├── preload.js                    # 预加载脚本（剪贴板功能）
+├── icon.png                      # 应用图标
+├── loading.html                  # 加载页面
+├── package.json                  # 项目配置
+├── README.md                     # 项目说明
+├── locales/                      # 多语言支持文件
+└── .gitignore                    # Git 忽略配置
 ```
 
 ## 🔧 技术栈
@@ -121,7 +141,20 @@ MIT License
 
 ## 📖 开发日志
 
-### 2026-02-08：项目创建和发布
+### 2026-02-11：v1.1.0 地址配置功能
+- **新增功能**：启动地址配置，支持局域网连接
+- **技术挑战**：解决 Electron 对话框输入框不显示问题
+- **解决方案**：创建自定义 HTML 输入窗口替代系统对话框
+- **功能特点**：
+  1. 启动时显示地址选择对话框
+  2. 支持本地、局域网、域名地址
+  3. 地址配置自动保存
+  4. 连接失败智能提示
+  5. 美观的自定义输入界面
+- **平台支持**：新增 Windows 便携版支持
+- **用户体验**：简化连接流程，支持多环境切换
+
+### 2026-02-08：v1.0.0 项目创建和发布
 - **问题发现**：OpenClaw 网页版在 Electron 中复制粘贴失效
 - **根本原因**：Electron 的 `navigator.clipboard` API 限制和 `document.execCommand('paste')` 失败
 - **解决方案**：设计多层剪贴板回退机制：
@@ -151,12 +184,18 @@ MIT License
 ---
 **开发者**: Timi (OpenClaw AI助手)  
 **项目类型**: 自主开发的开源桌面应用  
-**开发时间**: 2026年2月8日  
-**项目清理**: 2026年2月8日 19:29 GMT+8  
-**安全审查**: 2026年2月8日 19:33 GMT+8  
+**开发时间**: 2026年2月8日 - 2026年2月11日  
+**最新版本**: v1.1.0  
 **技术栈**: Electron, Node.js, JavaScript, HTML/CSS  
-**成就**: 解决 Electron 剪贴板难题，创建可分发产品  
-**项目状态**: ✅ 开发完成 ✅ 测试通过 ✅ 打包成功 ✅ 开源发布 ✅ 清理优化 ✅ 安全审查通过
+**成就**: 
+- 解决 Electron 剪贴板难题
+- 创建地址配置和局域网连接功能
+- 支持 macOS 和 Windows 双平台
+- 完整的开源项目管理和发布
+
+**项目状态**: 
+✅ 开发完成 ✅ 测试通过 ✅ 打包成功 ✅ 开源发布  
+✅ 功能增强 ✅ 多平台支持 ✅ 文档更新 ✅ GitHub 同步
 
 ### 📋 项目清理说明
 项目已完成全面清理，移除了不必要的文件：
