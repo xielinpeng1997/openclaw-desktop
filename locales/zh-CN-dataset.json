@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "created": "2026-02-08T13:18:47.658Z",
+    "version": "1.0",
+    "source": "OpenClaw UI Scraper",
+    "totalEntries": 2
+  },
+  "translations": {
+    "OpenClaw Control": "打开Claw Control",
+    "Timi": "[待翻译] Timi"
+  },
+  "lookup": {
+    "OpenClaw": [
+      {
+        "en": "OpenClaw Control",
+        "zh": "打开Claw Control"
+      }
+    ],
+    "Control": [
+      {
+        "en": "OpenClaw Control",
+        "zh": "打开Claw Control"
+      }
+    ],
+    "Timi": [
+      {
+        "en": "Timi",
+        "zh": "[待翻译] Timi"
+      }
+    ]
+  }
+}

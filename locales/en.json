@@ -1,0 +1,140 @@
+{
+  "app": {
+    "title": "OpenClaw Control",
+    "offline": "Offline",
+    "docs": "Docs (opens in new tab)"
+  },
+  
+  "navigation": {
+    "dashboard": "Dashboard",
+    "sessions": "Sessions",
+    "tools": "Tools",
+    "skills": "Skills",
+    "memory": "Memory",
+    "settings": "Settings",
+    "help": "Help",
+    "expandSidebar": "Expand sidebar",
+    "collapseSidebar": "Collapse sidebar"
+  },
+  
+  "buttons": {
+    "newSession": "New Session",
+    "sendMessage": "Send Message",
+    "uploadFile": "Upload File",
+    "clearChat": "Clear Chat",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "copy": "Copy",
+    "paste": "Paste",
+    "savePublish": "Save & Publish",
+    "hideAdvanced": "Hide Advanced",
+    "showAdvanced": "Show Advanced",
+    "importFromRelays": "Import from Relays",
+    "pin": "Pin",
+    "unpin": "Unpin",
+    "removeFilter": "Remove filter",
+    "collapse": "Collapse",
+    "expand": "Expand",
+    "collapseAll": "Collapse All",
+    "expandAll": "Expand All"
+  },
+  
+  "status": {
+    "loggedOut": "Logged out",
+    "saving": "Saving...",
+    "importing": "Importing...",
+    "disconnected": "Disconnected",
+    "connected": "Connected",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning"
+  },
+  
+  "profile": {
+    "profilePicture": "Profile picture preview",
+    "username": "Username",
+    "shortUsername": "Short username (e.g., satoshi)",
+    "displayName": "Display Name",
+    "displayNameExample": "Satoshi Nakamoto",
+    "displayNameHint": "Your full display name",
+    "bio": "Bio",
+    "bioPlaceholder": "Tell people about yourself...",
+    "avatarUrl": "Avatar URL",
+    "bannerUrl": "Banner URL",
+    "website": "Website",
+    "websiteHint": "Your personal website",
+    "verifiableId": "Verifiable identifier (e.g., you@domain.com)",
+    "lightningAddress": "Lightning Address",
+    "lightningAddressHint": "Lightning address for tips (LUD-16)"
+  },
+  
+  "errors": {
+    "configHashMissing": "Config hash missing; reload and retry",
+    "profilePublishFailed": "Profile publish failed on all relays",
+    "profilePublished": "Profile published to relays",
+    "profileImported": "Profile imported from relays. Review and publish.",
+    "invalidRuntime": "Invalid run time",
+    "invalidInterval": "Invalid interval amount",
+    "cronRequired": "Cron expression required",
+    "systemEventRequired": "System event text required",
+    "agentMessageRequired": "Agent message required",
+    "nameRequired": "Name required",
+    "selectNodeBeforeLoading": "Select a node before loading exec approvals",
+    "execApprovalsHashMissing": "Exec approvals hash missing; reload and retry",
+    "selectNodeBeforeSaving": "Select a node before saving exec approvals"
+  },
+  
+  "messages": {
+    "newDeviceToken": "New device token (copy and store securely):",
+    "rejectPairing": "Reject this device pairing request?",
+    "noInstances": "No instances yet",
+    "noPresence": "No presence payload",
+    "skillEnabled": "Skill enabled",
+    "skillDisabled": "Skill disabled",
+    "installed": "Installed",
+    "noToolCalls": "No tool calls",
+    "noModelData": "No model data",
+    "closeSessionDetails": "Close session details",
+    "searchConversation": "Search conversation",
+    "filterSessions": "Filter sessions (e.g. key:agent:main:cron* model:gpt-4o has:errors minTokens:2000)"
+  },
+  
+  "labels": {
+    "ascending": "Ascending",
+    "descending": "Descending",
+    "topTools": "Top Tools",
+    "modelMix": "Model Mix",
+    "assistantOutputTokens": "Assistant output tokens",
+    "userToolInputTokens": "User + tool input tokens",
+    "tokensWrittenToCache": "Tokens written to cache",
+    "tokensReadFromCache": "Tokens read from cache",
+    "baseContextPerMessage": "Base context per message",
+    "system": "System",
+    "skills": "Skills",
+    "tools": "Tools",
+    "files": "Files",
+    "you": "You",
+    "assistant": "Assistant",
+    "tool": "Tool",
+    "today": "Today",
+    "pinned": "Pinned",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "timeZone": "Time zone",
+    "enter": "Enter",
+    "agent": "Agent",
+    "channel": "Channel",
+    "provider": "Provider",
+    "model": "Model"
+  },
+  
+  "technical": {
+    "unsupportedDecorator": "Unsupported decorator location",
+    "uint8Array": "Uint8Array",
+    "pointExpected": "Point expected",
+    "contentType": "Content-Type"
+  }
+}

@@ -1,4 +1,4 @@
-// Preload script - Enhanced clipboard support
+// Preload script - Enhanced clipboard support ONLY
 const { contextBridge, ipcRenderer, clipboard } = require('electron');
 
 // Enhanced clipboard functions

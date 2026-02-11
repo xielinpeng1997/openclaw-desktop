@@ -2,7 +2,7 @@
   "name": "openclaw-desktop",
   "version": "1.0.0",
   "description": "OpenClaw桌面客户端 - 由Timi AI助手开发，解决Electron复制粘贴问题",
-  "main": "main-only-drag-fix.js",
+  "main": "main-fixed-address-config.js",
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
@@ -35,10 +35,8 @@
     },
     "win": {
       "target": [
-        "nsis",
-        "zip"
-      ],
-      "icon": "icon.ico"
+        "portable"
+      ]
     },
     "linux": {
       "target": [
@@ -67,5 +65,8 @@
   "devDependencies": {
     "electron": "^40.2.1",
     "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "http-proxy": "^1.18.1"
   }
 }

@@ -1,0 +1,8276 @@
+
+// OpenClaw 数据包使用示例
+const dataset = {
+  "metadata": {
+    "created": "2026-02-08T15:23:52.637Z",
+    "version": "2.0",
+    "source": "Deep JavaScript Analysis",
+    "totalEntries": 417,
+    "stats": {
+      "autoTranslated": 186,
+      "needManual": 231
+    }
+  },
+  "translations": {
+    "A brief bio or description": "A brief bio or 描述",
+    "AI model configurations and providers": "AI 模型 configurations and providers",
+    "API key saved": "API 密钥 saved",
+    "API keys and authentication profiles": "API keys and 认证 profiles",
+    "Active": "[待翻译] Active",
+    "Add": "添加",
+    "Add Entry": "添加 Entry",
+    "Add a message or paste more images...": "[待翻译] Add a message or paste more images...",
+    "Add job": "添加 job",
+    "Advanced": "高级",
+    "Agent": "代理",
+    "Agent Context": "代理 上下文",
+    "Agent Cron": "代理 Cron",
+    "Agent configurations, models, and identities": "代理 configurations, models, and identities",
+    "Agent message": "代理 消息",
+    "Agent message required.": "代理 消息 required.",
+    "Agent workspace and routing.": "代理 workspace and routing.",
+    "Agents": "[待翻译] Agents",
+    "All Settings": "All 设置",
+    "Allow skill executables listed by the Gateway.": "Allow 技能 executables listed by the Gateway.",
+    "Allowlist": "[待翻译] Allowlist",
+    "Always": "[待翻译] Always",
+    "App Login": "[待翻译] App Login",
+    "App Web": "[待翻译] App Web",
+    "Applied when the UI prompt is unavailable.": "[待翻译] Applied when the UI prompt is unavailable.",
+    "Apply": "[待翻译] Apply",
+    "Ascending": "[待翻译] Ascending",
+    "Ask": "[待翻译] Ask",
+    "Assistant": "助手",
+    "Assistant output tokens": "助手 output 令牌",
+    "Attach": "[待翻译] Attach",
+    "Attached image": "[待翻译] Attached image",
+    "Attachment preview": "[待翻译] Attachment preview",
+    "Audio": "[待翻译] Audio",
+    "Authentication": "认证",
+    "Auto-update settings and release channel": "Auto-update 设置 and release 频道",
+    "Automation": "[待翻译] Automation",
+    "Avatar URL": "[待翻译] Avatar URL",
+    "Average cost per message when providers report costs.": "Average cost per 消息 when providers report costs.",
+    "Average tokens per message in this range.": "Average 令牌 per 消息 in this range.",
+    "Avg Cost": "[待翻译] Avg Cost",
+    "Avg Tokens": "Avg 令牌",
+    "BODY": "[待翻译] BODY",
+    "Banner URL": "[待翻译] Banner URL",
+    "Base context per message": "Base 上下文 per 消息",
+    "Bash": "[待翻译] Bash",
+    "Bindings": "[待翻译] Bindings",
+    "Bio": "[待翻译] Bio",
+    "BlueBubbles": "[待翻译] BlueBubbles",
+    "Broadcast": "[待翻译] Broadcast",
+    "Broadcast and notification settings": "Broadcast and notification 设置",
+    "Browser": "[待翻译] Browser",
+    "Browser automation settings": "Browser automation 设置",
+    "Built-in Skills": "Built-in 技能",
+    "By Type": "By 类型",
+    "CWD": "[待翻译] CWD",
+    "Cache Hit": "[待翻译] Cache Hit",
+    "Cache Read": "[待翻译] Cache Read",
+    "Cache Write": "[待翻译] Cache Write",
+    "Cancel": "取消",
+    "Canvas": "[待翻译] Canvas",
+    "Canvas Host": "[待翻译] Canvas Host",
+    "Canvas rendering and display": "[待翻译] Canvas rendering and display",
+    "Change Gateway": "[待翻译] Change Gateway",
+    "Channel": "频道",
+    "Channels": "[待翻译] Channels",
+    "Chat": "[待翻译] Chat",
+    "Clear": "清空",
+    "Clear All": "清空 All",
+    "Clear Selection": "清空 Selection",
+    "Click Connect": "[待翻译] Click Connect",
+    "Close": "关闭",
+    "Close session details": "关闭 会话 details",
+    "Close sidebar": "关闭 sidebar",
+    "Coding": "[待翻译] Coding",
+    "Collapse": "[待翻译] Collapse",
+    "Collapse All": "[待翻译] Collapse All",
+    "Collapse sidebar": "[待翻译] Collapse sidebar",
+    "Commands": "[待翻译] Commands",
+    "Config": "[待翻译] Config",
+    "Connected": "已连接",
+    "Connected Instances": "已连接 Instances",
+    "Content-Type": "Content-类型",
+    "Control": "[待翻译] Control",
+    "Control canvases": "[待翻译] Control canvases",
+    "Control web browser": "[待翻译] Control web browser",
+    "Copied": "[待翻译] Copied",
+    "Copy": "复制",
+    "Copy as markdown": "复制 as markdown",
+    "Copy failed": "复制 failed",
+    "Copy session name": "复制 会话 名称",
+    "Core Files": "[待翻译] Core Files",
+    "Cost": "[待翻译] Cost",
+    "Create": "创建",
+    "Create or overwrite files": "创建 or overwrite files",
+    "Cron": "[待翻译] Cron",
+    "Cron Jobs": "[待翻译] Cron Jobs",
+    "Cron expression required.": "[待翻译] Cron expression required.",
+    "Custom slash commands": "[待翻译] Custom slash commands",
+    "Daily Usage": "[待翻译] Daily Usage",
+    "Dark": "[待翻译] Dark",
+    "Dark theme": "[待翻译] Dark theme",
+    "Dashboard": "仪表板",
+    "Debug": "调试",
+    "Default Session": "Default 会话",
+    "Default prompt policy.": "[待翻译] Default prompt policy.",
+    "Default security mode.": "Default 安全 mode.",
+    "Delete": "删除",
+    "Deny": "[待翻译] Deny",
+    "Descending": "[待翻译] Descending",
+    "Description": "描述",
+    "Direct gateway chat session for quick interventions.": "Direct gateway chat 会话 for quick interventions.",
+    "Disable": "[待翻译] Disable",
+    "Disable All": "[待翻译] Disable All",
+    "Disabled": "[待翻译] Disabled",
+    "Disabled during onboarding": "[待翻译] Disabled during onboarding",
+    "Disconnected": "已断开",
+    "Disconnected from gateway.": "已断开 from gateway.",
+    "Discord": "[待翻译] Discord",
+    "Discovery": "[待翻译] Discovery",
+    "Display Name": "Display 名称",
+    "Distinct sessions in the range.": "Distinct 会话 in the range.",
+    "Edit": "编辑",
+    "Edit Profile": "编辑 Profile",
+    "Empty State": "[待翻译] Empty State",
+    "Enable": "[待翻译] Enable",
+    "Enable All": "[待翻译] Enable All",
+    "Enabled": "[待翻译] Enabled",
+    "End Date": "[待翻译] End Date",
+    "Enter": "[待翻译] Enter",
+    "Environment": "[待翻译] Environment",
+    "Environment Variables": "[待翻译] Environment Variables",
+    "Environment variables passed to the gateway process": "[待翻译] Environment variables passed to the gateway process",
+    "Error": "错误",
+    "Error Rate": "错误 Rate",
+    "Event Log": "事件 Log",
+    "Exit focus mode": "[待翻译] Exit focus mode",
+    "Expand All": "[待翻译] Expand All",
+    "Expand all": "[待翻译] Expand all",
+    "Expand sidebar": "[待翻译] Expand sidebar",
+    "Extra Skills": "Extra 技能",
+    "Fetch web content": "[待翻译] Fetch web content",
+    "Files": "[待翻译] Files",
+    "Filter": "筛选",
+    "Fri": "[待翻译] Fri",
+    "Full": "[待翻译] Full",
+    "GB": "[待翻译] GB",
+    "GET": "[待翻译] GET",
+    "Gateway": "[待翻译] Gateway",
+    "Gateway Access": "[待翻译] Gateway Access",
+    "Gateway Dashboard": "Gateway 仪表板",
+    "Gateway Token": "Gateway 令牌",
+    "Gateway control": "[待翻译] Gateway control",
+    "Gateway metadata and version information": "[待翻译] Gateway metadata and version information",
+    "Gateway snapshots, events, and manual RPC calls.": "[待翻译] Gateway snapshots, events, and manual RPC calls.",
+    "Gateway status, entry points, and a fast health read.": "Gateway 状态, entry points, and a fast health read.",
+    "Google Chat": "[待翻译] Google Chat",
+    "HTML": "[待翻译] HTML",
+    "HTTPS URL to a banner image": "[待翻译] HTTPS URL to a banner image",
+    "HTTPS URL to your profile picture": "[待翻译] HTTPS URL to your profile picture",
+    "Hide Advanced": "Hide 高级",
+    "Hooks": "[待翻译] Hooks",
+    "Host": "[待翻译] Host",
+    "Identity Emoji": "[待翻译] Identity Emoji",
+    "Identity Name": "Identity 名称",
+    "Image understanding": "[待翻译] Image understanding",
+    "Import from Relays": "[待翻译] Import from Relays",
+    "Importing...": "[待翻译] Importing...",
+    "Info": "信息",
+    "Inherit default": "[待翻译] Inherit default",
+    "Inspect active sessions and adjust per-session defaults.": "Inspect active 会话 and adjust per-会话 defaults.",
+    "Installed": "[待翻译] Installed",
+    "Installed Skills": "Installed 技能",
+    "Instances": "[待翻译] Instances",
+    "Invalid interval amount.": "[待翻译] Invalid interval amount.",
+    "Invalid run time.": "[待翻译] Invalid run time.",
+    "JSON value": "[待翻译] JSON value",
+    "KB": "[待翻译] KB",
+    "Key": "密钥",
+    "Key bindings and shortcuts": "密钥 bindings and shortcuts",
+    "LINK": "[待翻译] LINK",
+    "Last Channels": "[待翻译] Last Channels",
+    "Light": "[待翻译] Light",
+    "Light theme": "[待翻译] Light theme",
+    "Lightning Address": "[待翻译] Lightning Address",
+    "Link Whats": "[待翻译] Link Whats",
+    "List agents": "[待翻译] List agents",
+    "List sessions": "List 会话",
+    "Live tail of the gateway file logs.": "Live tail of the gateway file 日志.",
+    "Load approvals": "[待翻译] Load approvals",
+    "Load config": "[待翻译] Load config",
+    "Loading": "加载中",
+    "Local": "[待翻译] Local",
+    "Log levels and output configuration": "Log levels and output 配置",
+    "Logged out.": "[待翻译] Logged out.",
+    "Logging": "[待翻译] Logging",
+    "Logs": "日志",
+    "MB": "[待翻译] MB",
+    "Make precise edits": "[待翻译] Make precise edits",
+    "Manage agent workspaces, tools, and identities.": "Manage 代理 workspaces, 工具, and identities.",
+    "Manage background processes": "[待翻译] Manage background processes",
+    "Manage channels and settings.": "Manage channels and 设置.",
+    "Manage skill availability and API key injection.": "Manage 技能 availability and API 密钥 injection.",
+    "Matrix": "[待翻译] Matrix",
+    "Media": "[待翻译] Media",
+    "Memory": "记忆",
+    "Message handling and routing settings": "消息 handling and routing 设置",
+    "Messages": "[待翻译] Messages",
+    "Messaging": "[待翻译] Messaging",
+    "Metadata": "[待翻译] Metadata",
+    "Minimal": "[待翻译] Minimal",
+    "Missing": "[待翻译] Missing",
+    "Model": "模型",
+    "Model Mix": "模型 Mix",
+    "Model Selection": "模型 Selection",
+    "Models": "[待翻译] Models",
+    "Mon": "[待翻译] Mon",
+    "Name": "名称",
+    "Name required.": "名称 required.",
+    "New": "新建",
+    "New Job": "新建 Job",
+    "New pattern": "新建 pattern",
+    "New session": "新建 会话",
+    "No": "[待翻译] No",
+    "No agent data": "No 代理 data",
+    "No channel data": "No 频道 data",
+    "No critical issues": "[待翻译] No critical issues",
+    "No error data": "No 错误 data",
+    "No instances yet.": "[待翻译] No instances yet.",
+    "No model data": "No 模型 data",
+    "No presence payload.": "[待翻译] No presence payload.",
+    "No provider data": "No 提供商 data",
+    "No settings in this section": "No 设置 in this section",
+    "No snapshot yet.": "[待翻译] No snapshot yet.",
+    "No tool calls": "No 工具 calls",
+    "Nodes": "[待翻译] Nodes",
+    "OK": "[待翻译] OK",
+    "Off": "[待翻译] Off",
+    "Offline": "离线",
+    "On miss": "[待翻译] On miss",
+    "Open": "打开",
+    "OpenClaw": "[待翻译] OpenClaw",
+    "Other Skills": "Other 技能",
+    "Overview": "[待翻译] Overview",
+    "POST": "[待翻译] POST",
+    "PUT": "[待翻译] PUT",
+    "Paired devices, capabilities, and command exposure.": "[待翻译] Paired devices, capabilities, and command exposure.",
+    "Peak Error": "Peak 错误",
+    "Peak Error Days": "Peak 错误 Days",
+    "Peak Error Hours": "Peak 错误 Hours",
+    "Per Turn": "[待翻译] Per Turn",
+    "Pin": "[待翻译] Pin",
+    "Pin filters": "[待翻译] Pin filters",
+    "Pinned": "[待翻译] Pinned",
+    "Plugin management and extensions": "插件 management and extensions",
+    "Plugins": "[待翻译] Plugins",
+    "Point expected": "[待翻译] Point expected",
+    "Presence beacons from connected clients and nodes.": "Presence beacons from 已连接 clients and nodes.",
+    "Primary Model": "Primary 模型",
+    "Process": "[待翻译] Process",
+    "Profile imported from relays. Review and publish.": "[待翻译] Profile imported from relays. Review and publish.",
+    "Profile imported. Review and publish.": "[待翻译] Profile imported. Review and publish.",
+    "Profile picture": "[待翻译] Profile picture",
+    "Profile picture preview": "[待翻译] Profile picture preview",
+    "Profile publish failed on all relays.": "[待翻译] Profile publish failed on all relays.",
+    "Profile published to relays.": "[待翻译] Profile published to relays.",
+    "Provider": "提供商",
+    "Public Key": "Public 密钥",
+    "Queue": "[待翻译] Queue",
+    "Quick Presets": "[待翻译] Quick Presets",
+    "Read": "[待翻译] Read",
+    "Read file contents": "[待翻译] Read file contents",
+    "Read memory files": "Read 记忆 files",
+    "Refresh": "刷新",
+    "Refresh chat data": "刷新 chat data",
+    "Reject this device pairing request?": "[待翻译] Reject this device pairing request?",
+    "Reload": "[待翻译] Reload",
+    "Reload Config": "[待翻译] Reload Config",
+    "Remove": "移除",
+    "Remove attachment": "移除 attachment",
+    "Remove entry": "移除 entry",
+    "Remove filter": "移除 筛选",
+    "Remove item": "移除 item",
+    "Remove queued message": "移除 queued 消息",
+    "Reset": "重置",
+    "Reset to default": "重置 to default",
+    "Resolved": "[待翻译] Resolved",
+    "Run shell commands": "[待翻译] Run shell commands",
+    "Runtime": "[待翻译] Runtime",
+    "Sat": "[待翻译] Sat",
+    "Satoshi Nakamoto": "[待翻译] Satoshi Nakamoto",
+    "Save": "保存",
+    "Saving": "保存中",
+    "Saving...": "保存中...",
+    "Schedule tasks": "计划 tasks",
+    "Schedule wakeups and recurring agent runs.": "计划 wakeups and recurring 代理 runs.",
+    "Scheduled tasks and automation": "[待翻译] Scheduled tasks and automation",
+    "Search": "搜索",
+    "Search conversation": "搜索 conversation",
+    "Search logs": "搜索 日志",
+    "Search settings...": "[待翻译] Search settings...",
+    "Search skills": "搜索 技能",
+    "Search the web": "搜索 the web",
+    "Security": "安全",
+    "Select All": "[待翻译] Select All",
+    "Select a node before loading exec approvals.": "Select a node before 加载中 exec approvals.",
+    "Select a node before saving exec approvals.": "Select a node before 保存中 exec approvals.",
+    "Semantic search": "Semantic 搜索",
+    "Send": "发送",
+    "Send messages": "发送 messages",
+    "Send to session": "发送 to 会话",
+    "Service discovery and networking": "[待翻译] Service discovery and networking",
+    "Session": "会话",
+    "Session Detail": "会话 Detail",
+    "Session history": "会话 历史",
+    "Session management and persistence": "会话 management and persistence",
+    "Session status": "会话 状态",
+    "Sessions": "会话",
+    "Settings": "设置",
+    "Setup Wizard": "[待翻译] Setup Wizard",
+    "Setup wizard state and history": "Setup wizard state and 历史",
+    "Show Advanced": "Show 高级",
+    "Show QR": "[待翻译] Show QR",
+    "Signal": "[待翻译] Signal",
+    "Skill disabled": "技能 disabled",
+    "Skill enabled": "技能 enabled",
+    "Skill packs and capabilities": "技能 packs and capabilities",
+    "Skills": "技能",
+    "Skills Filter": "技能 筛选",
+    "Slack": "[待翻译] Slack",
+    "Sort": "排序",
+    "Spawn sub-agent": "Spawn sub-代理",
+    "Start Date": "[待翻译] Start Date",
+    "Status": "状态",
+    "Stop": "[待翻译] Stop",
+    "Success": "成功",
+    "Sun": "[待翻译] Sun",
+    "System": "系统",
+    "System Prompt": "系统 Prompt",
+    "System event text required.": "系统 事件 text required.",
+    "System text": "系统 text",
+    "System theme": "系统 theme",
+    "TB": "[待翻译] TB",
+    "Tailscale Serve": "[待翻译] Tailscale Serve",
+    "Talk": "[待翻译] Talk",
+    "Teams": "[待翻译] Teams",
+    "Telegram": "[待翻译] Telegram",
+    "Tell people about yourself...": "[待翻译] Tell people about yourself...",
+    "Theme": "[待翻译] Theme",
+    "Throughput shows tokens per minute over active time. Higher is better.": "Throughput shows 令牌 per minute over active time. Higher is better.",
+    "Thu": "[待翻译] Thu",
+    "Tick Interval": "[待翻译] Tick Interval",
+    "Time zone": "[待翻译] Time zone",
+    "Today": "[待翻译] Today",
+    "Token": "令牌",
+    "Token Usage": "令牌 Usage",
+    "Token with": "令牌 with",
+    "Tokens": "令牌",
+    "Tokens read from cache": "令牌 read from cache",
+    "Tokens written to cache": "令牌 written to cache",
+    "Tool": "工具",
+    "Tool Access": "工具 Access",
+    "Tool Calls": "工具 Calls",
+    "Tool Output": "工具 Output",
+    "Tool Result": "工具 Result",
+    "Tools": "工具",
+    "Top Agents": "[待翻译] Top Agents",
+    "Top Channels": "[待翻译] Top Channels",
+    "Top Models": "[待翻译] Top Models",
+    "Top Providers": "[待翻译] Top Providers",
+    "Top Tools": "Top 工具",
+    "Total tool call count across sessions.": "Total 工具 call count across 会话.",
+    "TrustedHTML": "[待翻译] TrustedHTML",
+    "TrustedScriptURL": "[待翻译] TrustedScriptURL",
+    "TrustedTypes policy": "[待翻译] TrustedTypes policy",
+    "Tue": "[待翻译] Tue",
+    "Type": "类型",
+    "UI": "[待翻译] UI",
+    "UTC": "[待翻译] UTC",
+    "Unavailable": "[待翻译] Unavailable",
+    "Unpin filters": "[待翻译] Unpin filters",
+    "Unsaved changes": "[待翻译] Unsaved changes",
+    "Update": "[待翻译] Update",
+    "Updates": "[待翻译] Updates",
+    "Usage": "[待翻译] Usage",
+    "Usage Over": "[待翻译] Usage Over",
+    "Usage Over Time": "[待翻译] Usage Over Time",
+    "Usage Overview": "[待翻译] Usage Overview",
+    "Use All": "[待翻译] Use All",
+    "Use Channels": "[待翻译] Use Channels",
+    "Use Raw": "[待翻译] Use Raw",
+    "User": "用户",
+    "User interface preferences": "用户 interface 偏好设置",
+    "Username": "[待翻译] Username",
+    "Value passed to": "[待翻译] Value passed to",
+    "View": "[待翻译] View",
+    "View Raw": "[待翻译] View Raw",
+    "Voice and speech settings": "Voice and speech 设置",
+    "Web": "[待翻译] Web",
+    "Web server and API settings": "Web server and API 设置",
+    "WebChat": "[待翻译] WebChat",
+    "Webhooks and event hooks": "Webhooks and 事件 hooks",
+    "Website": "[待翻译] Website",
+    "Wed": "[待翻译] Wed",
+    "WhatsApp": "[待翻译] WhatsApp",
+    "WhatsApp Login": "[待翻译] WhatsApp Login",
+    "WhatsApp QR": "[待翻译] WhatsApp QR",
+    "Workspace Skills": "Workspace 技能",
+    "Workspace and scheduling targets.": "[待翻译] Workspace and scheduling targets.",
+    "Workspace, identity, and model configuration.": "Workspace, identity, and 模型 配置.",
+    "Write": "[待翻译] Write",
+    "Yes": "[待翻译] Yes",
+    "You": "[待翻译] You",
+    "Your full display name": "Your full display 名称",
+    "Your personal website": "[待翻译] Your personal website",
+    "Zalo": "[待翻译] Zalo",
+    "Zalo Personal": "[待翻译] Zalo Personal"
+  },
+  "byLength": {
+    "2": [
+      {
+        "en": "GB",
+        "zh": "[待翻译] GB"
+      },
+      {
+        "en": "KB",
+        "zh": "[待翻译] KB"
+      },
+      {
+        "en": "MB",
+        "zh": "[待翻译] MB"
+      },
+      {
+        "en": "No",
+        "zh": "[待翻译] No"
+      },
+      {
+        "en": "OK",
+        "zh": "[待翻译] OK"
+      },
+      {
+        "en": "TB",
+        "zh": "[待翻译] TB"
+      },
+      {
+        "en": "UI",
+        "zh": "[待翻译] UI"
+      }
+    ],
+    "3": [
+      {
+        "en": "Add",
+        "zh": "添加"
+      },
+      {
+        "en": "Ask",
+        "zh": "[待翻译] Ask"
+      },
+      {
+        "en": "Bio",
+        "zh": "[待翻译] Bio"
+      },
+      {
+        "en": "CWD",
+        "zh": "[待翻译] CWD"
+      },
+      {
+        "en": "Fri",
+        "zh": "[待翻译] Fri"
+      },
+      {
+        "en": "GET",
+        "zh": "[待翻译] GET"
+      },
+      {
+        "en": "Key",
+        "zh": "密钥"
+      },
+      {
+        "en": "Mon",
+        "zh": "[待翻译] Mon"
+      },
+      {
+        "en": "New",
+        "zh": "新建"
+      },
+      {
+        "en": "Off",
+        "zh": "[待翻译] Off"
+      },
+      {
+        "en": "PUT",
+        "zh": "[待翻译] PUT"
+      },
+      {
+        "en": "Pin",
+        "zh": "[待翻译] Pin"
+      },
+      {
+        "en": "Sat",
+        "zh": "[待翻译] Sat"
+      },
+      {
+        "en": "Sun",
+        "zh": "[待翻译] Sun"
+      },
+      {
+        "en": "Thu",
+        "zh": "[待翻译] Thu"
+      },
+      {
+        "en": "Tue",
+        "zh": "[待翻译] Tue"
+      },
+      {
+        "en": "UTC",
+        "zh": "[待翻译] UTC"
+      },
+      {
+        "en": "Web",
+        "zh": "[待翻译] Web"
+      },
+      {
+        "en": "Wed",
+        "zh": "[待翻译] Wed"
+      },
+      {
+        "en": "Yes",
+        "zh": "[待翻译] Yes"
+      },
+      {
+        "en": "You",
+        "zh": "[待翻译] You"
+      }
+    ],
+    "4": [
+      {
+        "en": "BODY",
+        "zh": "[待翻译] BODY"
+      },
+      {
+        "en": "Bash",
+        "zh": "[待翻译] Bash"
+      },
+      {
+        "en": "Chat",
+        "zh": "[待翻译] Chat"
+      },
+      {
+        "en": "Copy",
+        "zh": "复制"
+      },
+      {
+        "en": "Cost",
+        "zh": "[待翻译] Cost"
+      },
+      {
+        "en": "Cron",
+        "zh": "[待翻译] Cron"
+      },
+      {
+        "en": "Dark",
+        "zh": "[待翻译] Dark"
+      },
+      {
+        "en": "Deny",
+        "zh": "[待翻译] Deny"
+      },
+      {
+        "en": "Edit",
+        "zh": "编辑"
+      },
+      {
+        "en": "Full",
+        "zh": "[待翻译] Full"
+      },
+      {
+        "en": "HTML",
+        "zh": "[待翻译] HTML"
+      },
+      {
+        "en": "Host",
+        "zh": "[待翻译] Host"
+      },
+      {
+        "en": "Info",
+        "zh": "信息"
+      },
+      {
+        "en": "LINK",
+        "zh": "[待翻译] LINK"
+      },
+      {
+        "en": "Logs",
+        "zh": "日志"
+      },
+      {
+        "en": "Name",
+        "zh": "名称"
+      },
+      {
+        "en": "Open",
+        "zh": "打开"
+      },
+      {
+        "en": "POST",
+        "zh": "[待翻译] POST"
+      },
+      {
+        "en": "Read",
+        "zh": "[待翻译] Read"
+      },
+      {
+        "en": "Save",
+        "zh": "保存"
+      },
+      {
+        "en": "Send",
+        "zh": "发送"
+      },
+      {
+        "en": "Sort",
+        "zh": "排序"
+      },
+      {
+        "en": "Stop",
+        "zh": "[待翻译] Stop"
+      },
+      {
+        "en": "Talk",
+        "zh": "[待翻译] Talk"
+      },
+      {
+        "en": "Tool",
+        "zh": "工具"
+      },
+      {
+        "en": "Type",
+        "zh": "类型"
+      },
+      {
+        "en": "User",
+        "zh": "用户"
+      },
+      {
+        "en": "View",
+        "zh": "[待翻译] View"
+      },
+      {
+        "en": "Zalo",
+        "zh": "[待翻译] Zalo"
+      }
+    ],
+    "5": [
+      {
+        "en": "Agent",
+        "zh": "代理"
+      },
+      {
+        "en": "Apply",
+        "zh": "[待翻译] Apply"
+      },
+      {
+        "en": "Audio",
+        "zh": "[待翻译] Audio"
+      },
+      {
+        "en": "Clear",
+        "zh": "清空"
+      },
+      {
+        "en": "Close",
+        "zh": "关闭"
+      },
+      {
+        "en": "Debug",
+        "zh": "调试"
+      },
+      {
+        "en": "Enter",
+        "zh": "[待翻译] Enter"
+      },
+      {
+        "en": "Error",
+        "zh": "错误"
+      },
+      {
+        "en": "Files",
+        "zh": "[待翻译] Files"
+      },
+      {
+        "en": "Hooks",
+        "zh": "[待翻译] Hooks"
+      },
+      {
+        "en": "Light",
+        "zh": "[待翻译] Light"
+      },
+      {
+        "en": "Local",
+        "zh": "[待翻译] Local"
+      },
+      {
+        "en": "Media",
+        "zh": "[待翻译] Media"
+      },
+      {
+        "en": "Model",
+        "zh": "模型"
+      },
+      {
+        "en": "Nodes",
+        "zh": "[待翻译] Nodes"
+      },
+      {
+        "en": "Queue",
+        "zh": "[待翻译] Queue"
+      },
+      {
+        "en": "Reset",
+        "zh": "重置"
+      },
+      {
+        "en": "Slack",
+        "zh": "[待翻译] Slack"
+      },
+      {
+        "en": "Teams",
+        "zh": "[待翻译] Teams"
+      },
+      {
+        "en": "Theme",
+        "zh": "[待翻译] Theme"
+      },
+      {
+        "en": "Today",
+        "zh": "[待翻译] Today"
+      },
+      {
+        "en": "Token",
+        "zh": "令牌"
+      },
+      {
+        "en": "Tools",
+        "zh": "工具"
+      },
+      {
+        "en": "Usage",
+        "zh": "[待翻译] Usage"
+      },
+      {
+        "en": "Write",
+        "zh": "[待翻译] Write"
+      }
+    ],
+    "6": [
+      {
+        "en": "Active",
+        "zh": "[待翻译] Active"
+      },
+      {
+        "en": "Agents",
+        "zh": "[待翻译] Agents"
+      },
+      {
+        "en": "Always",
+        "zh": "[待翻译] Always"
+      },
+      {
+        "en": "Attach",
+        "zh": "[待翻译] Attach"
+      },
+      {
+        "en": "Cancel",
+        "zh": "取消"
+      },
+      {
+        "en": "Canvas",
+        "zh": "[待翻译] Canvas"
+      },
+      {
+        "en": "Coding",
+        "zh": "[待翻译] Coding"
+      },
+      {
+        "en": "Config",
+        "zh": "[待翻译] Config"
+      },
+      {
+        "en": "Copied",
+        "zh": "[待翻译] Copied"
+      },
+      {
+        "en": "Create",
+        "zh": "创建"
+      },
+      {
+        "en": "Delete",
+        "zh": "删除"
+      },
+      {
+        "en": "Enable",
+        "zh": "[待翻译] Enable"
+      },
+      {
+        "en": "Filter",
+        "zh": "筛选"
+      },
+      {
+        "en": "Matrix",
+        "zh": "[待翻译] Matrix"
+      },
+      {
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "en": "Models",
+        "zh": "[待翻译] Models"
+      },
+      {
+        "en": "Pinned",
+        "zh": "[待翻译] Pinned"
+      },
+      {
+        "en": "Reload",
+        "zh": "[待翻译] Reload"
+      },
+      {
+        "en": "Remove",
+        "zh": "移除"
+      },
+      {
+        "en": "Saving",
+        "zh": "保存中"
+      },
+      {
+        "en": "Search",
+        "zh": "搜索"
+      },
+      {
+        "en": "Signal",
+        "zh": "[待翻译] Signal"
+      },
+      {
+        "en": "Skills",
+        "zh": "技能"
+      },
+      {
+        "en": "Status",
+        "zh": "状态"
+      },
+      {
+        "en": "System",
+        "zh": "系统"
+      },
+      {
+        "en": "Tokens",
+        "zh": "令牌"
+      },
+      {
+        "en": "Update",
+        "zh": "[待翻译] Update"
+      }
+    ],
+    "7": [
+      {
+        "en": "Add job",
+        "zh": "添加 job"
+      },
+      {
+        "en": "App Web",
+        "zh": "[待翻译] App Web"
+      },
+      {
+        "en": "Browser",
+        "zh": "[待翻译] Browser"
+      },
+      {
+        "en": "By Type",
+        "zh": "By 类型"
+      },
+      {
+        "en": "Channel",
+        "zh": "频道"
+      },
+      {
+        "en": "Control",
+        "zh": "[待翻译] Control"
+      },
+      {
+        "en": "Disable",
+        "zh": "[待翻译] Disable"
+      },
+      {
+        "en": "Discord",
+        "zh": "[待翻译] Discord"
+      },
+      {
+        "en": "Enabled",
+        "zh": "[待翻译] Enabled"
+      },
+      {
+        "en": "Gateway",
+        "zh": "[待翻译] Gateway"
+      },
+      {
+        "en": "Loading",
+        "zh": "加载中"
+      },
+      {
+        "en": "Logging",
+        "zh": "[待翻译] Logging"
+      },
+      {
+        "en": "Minimal",
+        "zh": "[待翻译] Minimal"
+      },
+      {
+        "en": "Missing",
+        "zh": "[待翻译] Missing"
+      },
+      {
+        "en": "New Job",
+        "zh": "新建 Job"
+      },
+      {
+        "en": "Offline",
+        "zh": "离线"
+      },
+      {
+        "en": "On miss",
+        "zh": "[待翻译] On miss"
+      },
+      {
+        "en": "Plugins",
+        "zh": "[待翻译] Plugins"
+      },
+      {
+        "en": "Process",
+        "zh": "[待翻译] Process"
+      },
+      {
+        "en": "Refresh",
+        "zh": "刷新"
+      },
+      {
+        "en": "Runtime",
+        "zh": "[待翻译] Runtime"
+      },
+      {
+        "en": "Session",
+        "zh": "会话"
+      },
+      {
+        "en": "Show QR",
+        "zh": "[待翻译] Show QR"
+      },
+      {
+        "en": "Success",
+        "zh": "成功"
+      },
+      {
+        "en": "Updates",
+        "zh": "[待翻译] Updates"
+      },
+      {
+        "en": "Use All",
+        "zh": "[待翻译] Use All"
+      },
+      {
+        "en": "Use Raw",
+        "zh": "[待翻译] Use Raw"
+      },
+      {
+        "en": "WebChat",
+        "zh": "[待翻译] WebChat"
+      },
+      {
+        "en": "Website",
+        "zh": "[待翻译] Website"
+      }
+    ],
+    "8": [
+      {
+        "en": "Advanced",
+        "zh": "高级"
+      },
+      {
+        "en": "Avg Cost",
+        "zh": "[待翻译] Avg Cost"
+      },
+      {
+        "en": "Bindings",
+        "zh": "[待翻译] Bindings"
+      },
+      {
+        "en": "Channels",
+        "zh": "[待翻译] Channels"
+      },
+      {
+        "en": "Collapse",
+        "zh": "[待翻译] Collapse"
+      },
+      {
+        "en": "Commands",
+        "zh": "[待翻译] Commands"
+      },
+      {
+        "en": "Disabled",
+        "zh": "[待翻译] Disabled"
+      },
+      {
+        "en": "End Date",
+        "zh": "[待翻译] End Date"
+      },
+      {
+        "en": "Messages",
+        "zh": "[待翻译] Messages"
+      },
+      {
+        "en": "Metadata",
+        "zh": "[待翻译] Metadata"
+      },
+      {
+        "en": "OpenClaw",
+        "zh": "[待翻译] OpenClaw"
+      },
+      {
+        "en": "Overview",
+        "zh": "[待翻译] Overview"
+      },
+      {
+        "en": "Per Turn",
+        "zh": "[待翻译] Per Turn"
+      },
+      {
+        "en": "Provider",
+        "zh": "提供商"
+      },
+      {
+        "en": "Resolved",
+        "zh": "[待翻译] Resolved"
+      },
+      {
+        "en": "Security",
+        "zh": "安全"
+      },
+      {
+        "en": "Sessions",
+        "zh": "会话"
+      },
+      {
+        "en": "Settings",
+        "zh": "设置"
+      },
+      {
+        "en": "Telegram",
+        "zh": "[待翻译] Telegram"
+      },
+      {
+        "en": "Username",
+        "zh": "[待翻译] Username"
+      },
+      {
+        "en": "View Raw",
+        "zh": "[待翻译] View Raw"
+      },
+      {
+        "en": "WhatsApp",
+        "zh": "[待翻译] WhatsApp"
+      }
+    ],
+    "9": [
+      {
+        "en": "Add Entry",
+        "zh": "添加 Entry"
+      },
+      {
+        "en": "Allowlist",
+        "zh": "[待翻译] Allowlist"
+      },
+      {
+        "en": "App Login",
+        "zh": "[待翻译] App Login"
+      },
+      {
+        "en": "Ascending",
+        "zh": "[待翻译] Ascending"
+      },
+      {
+        "en": "Assistant",
+        "zh": "助手"
+      },
+      {
+        "en": "Broadcast",
+        "zh": "[待翻译] Broadcast"
+      },
+      {
+        "en": "Cache Hit",
+        "zh": "[待翻译] Cache Hit"
+      },
+      {
+        "en": "Clear All",
+        "zh": "清空 All"
+      },
+      {
+        "en": "Connected",
+        "zh": "已连接"
+      },
+      {
+        "en": "Cron Jobs",
+        "zh": "[待翻译] Cron Jobs"
+      },
+      {
+        "en": "Dashboard",
+        "zh": "仪表板"
+      },
+      {
+        "en": "Discovery",
+        "zh": "[待翻译] Discovery"
+      },
+      {
+        "en": "Event Log",
+        "zh": "事件 Log"
+      },
+      {
+        "en": "Installed",
+        "zh": "[待翻译] Installed"
+      },
+      {
+        "en": "Instances",
+        "zh": "[待翻译] Instances"
+      },
+      {
+        "en": "Messaging",
+        "zh": "[待翻译] Messaging"
+      },
+      {
+        "en": "Model Mix",
+        "zh": "模型 Mix"
+      },
+      {
+        "en": "Saving...",
+        "zh": "保存中..."
+      },
+      {
+        "en": "Time zone",
+        "zh": "[待翻译] Time zone"
+      },
+      {
+        "en": "Top Tools",
+        "zh": "Top 工具"
+      }
+    ],
+    "10": [
+      {
+        "en": "Agent Cron",
+        "zh": "代理 Cron"
+      },
+      {
+        "en": "Automation",
+        "zh": "[待翻译] Automation"
+      },
+      {
+        "en": "Avatar URL",
+        "zh": "[待翻译] Avatar URL"
+      },
+      {
+        "en": "Avg Tokens",
+        "zh": "Avg 令牌"
+      },
+      {
+        "en": "Banner URL",
+        "zh": "[待翻译] Banner URL"
+      },
+      {
+        "en": "Cache Read",
+        "zh": "[待翻译] Cache Read"
+      },
+      {
+        "en": "Core Files",
+        "zh": "[待翻译] Core Files"
+      },
+      {
+        "en": "Dark theme",
+        "zh": "[待翻译] Dark theme"
+      },
+      {
+        "en": "Descending",
+        "zh": "[待翻译] Descending"
+      },
+      {
+        "en": "Enable All",
+        "zh": "[待翻译] Enable All"
+      },
+      {
+        "en": "Error Rate",
+        "zh": "错误 Rate"
+      },
+      {
+        "en": "Expand All",
+        "zh": "[待翻译] Expand All"
+      },
+      {
+        "en": "Expand all",
+        "zh": "[待翻译] Expand all"
+      },
+      {
+        "en": "JSON value",
+        "zh": "[待翻译] JSON value"
+      },
+      {
+        "en": "Link Whats",
+        "zh": "[待翻译] Link Whats"
+      },
+      {
+        "en": "Peak Error",
+        "zh": "Peak 错误"
+      },
+      {
+        "en": "Public Key",
+        "zh": "Public 密钥"
+      },
+      {
+        "en": "Select All",
+        "zh": "[待翻译] Select All"
+      },
+      {
+        "en": "Start Date",
+        "zh": "[待翻译] Start Date"
+      },
+      {
+        "en": "Token with",
+        "zh": "令牌 with"
+      },
+      {
+        "en": "Tool Calls",
+        "zh": "工具 Calls"
+      },
+      {
+        "en": "Top Agents",
+        "zh": "[待翻译] Top Agents"
+      },
+      {
+        "en": "Top Models",
+        "zh": "[待翻译] Top Models"
+      },
+      {
+        "en": "Usage Over",
+        "zh": "[待翻译] Usage Over"
+      }
+    ],
+    "11": [
+      {
+        "en": "BlueBubbles",
+        "zh": "[待翻译] BlueBubbles"
+      },
+      {
+        "en": "Cache Write",
+        "zh": "[待翻译] Cache Write"
+      },
+      {
+        "en": "Canvas Host",
+        "zh": "[待翻译] Canvas Host"
+      },
+      {
+        "en": "Copy failed",
+        "zh": "复制 failed"
+      },
+      {
+        "en": "Daily Usage",
+        "zh": "[待翻译] Daily Usage"
+      },
+      {
+        "en": "Description",
+        "zh": "描述"
+      },
+      {
+        "en": "Disable All",
+        "zh": "[待翻译] Disable All"
+      },
+      {
+        "en": "Empty State",
+        "zh": "[待翻译] Empty State"
+      },
+      {
+        "en": "Environment",
+        "zh": "[待翻译] Environment"
+      },
+      {
+        "en": "Google Chat",
+        "zh": "[待翻译] Google Chat"
+      },
+      {
+        "en": "Light theme",
+        "zh": "[待翻译] Light theme"
+      },
+      {
+        "en": "List agents",
+        "zh": "[待翻译] List agents"
+      },
+      {
+        "en": "Load config",
+        "zh": "[待翻译] Load config"
+      },
+      {
+        "en": "Logged out.",
+        "zh": "[待翻译] Logged out."
+      },
+      {
+        "en": "New pattern",
+        "zh": "新建 pattern"
+      },
+      {
+        "en": "New session",
+        "zh": "新建 会话"
+      },
+      {
+        "en": "Pin filters",
+        "zh": "[待翻译] Pin filters"
+      },
+      {
+        "en": "Remove item",
+        "zh": "移除 item"
+      },
+      {
+        "en": "Search logs",
+        "zh": "搜索 日志"
+      },
+      {
+        "en": "System text",
+        "zh": "系统 text"
+      },
+      {
+        "en": "Token Usage",
+        "zh": "令牌 Usage"
+      },
+      {
+        "en": "Tool Access",
+        "zh": "工具 Access"
+      },
+      {
+        "en": "Tool Output",
+        "zh": "工具 Output"
+      },
+      {
+        "en": "Tool Result",
+        "zh": "工具 Result"
+      },
+      {
+        "en": "TrustedHTML",
+        "zh": "[待翻译] TrustedHTML"
+      },
+      {
+        "en": "Unavailable",
+        "zh": "[待翻译] Unavailable"
+      },
+      {
+        "en": "WhatsApp QR",
+        "zh": "[待翻译] WhatsApp QR"
+      }
+    ],
+    "12": [
+      {
+        "en": "All Settings",
+        "zh": "All 设置"
+      },
+      {
+        "en": "Collapse All",
+        "zh": "[待翻译] Collapse All"
+      },
+      {
+        "en": "Content-Type",
+        "zh": "Content-类型"
+      },
+      {
+        "en": "Disconnected",
+        "zh": "已断开"
+      },
+      {
+        "en": "Display Name",
+        "zh": "Display 名称"
+      },
+      {
+        "en": "Edit Profile",
+        "zh": "编辑 Profile"
+      },
+      {
+        "en": "Extra Skills",
+        "zh": "Extra 技能"
+      },
+      {
+        "en": "Importing...",
+        "zh": "[待翻译] Importing..."
+      },
+      {
+        "en": "Other Skills",
+        "zh": "Other 技能"
+      },
+      {
+        "en": "Remove entry",
+        "zh": "移除 entry"
+      },
+      {
+        "en": "Setup Wizard",
+        "zh": "[待翻译] Setup Wizard"
+      },
+      {
+        "en": "System theme",
+        "zh": "系统 theme"
+      },
+      {
+        "en": "Top Channels",
+        "zh": "[待翻译] Top Channels"
+      },
+      {
+        "en": "Use Channels",
+        "zh": "[待翻译] Use Channels"
+      }
+    ],
+    "13": [
+      {
+        "en": "API key saved",
+        "zh": "API 密钥 saved"
+      },
+      {
+        "en": "Agent Context",
+        "zh": "代理 上下文"
+      },
+      {
+        "en": "Agent message",
+        "zh": "代理 消息"
+      },
+      {
+        "en": "Click Connect",
+        "zh": "[待翻译] Click Connect"
+      },
+      {
+        "en": "Close sidebar",
+        "zh": "关闭 sidebar"
+      },
+      {
+        "en": "Gateway Token",
+        "zh": "Gateway 令牌"
+      },
+      {
+        "en": "Hide Advanced",
+        "zh": "Hide 高级"
+      },
+      {
+        "en": "Identity Name",
+        "zh": "Identity 名称"
+      },
+      {
+        "en": "Last Channels",
+        "zh": "[待翻译] Last Channels"
+      },
+      {
+        "en": "List sessions",
+        "zh": "List 会话"
+      },
+      {
+        "en": "No agent data",
+        "zh": "No 代理 data"
+      },
+      {
+        "en": "No error data",
+        "zh": "No 错误 data"
+      },
+      {
+        "en": "No model data",
+        "zh": "No 模型 data"
+      },
+      {
+        "en": "No tool calls",
+        "zh": "No 工具 calls"
+      },
+      {
+        "en": "Primary Model",
+        "zh": "Primary 模型"
+      },
+      {
+        "en": "Quick Presets",
+        "zh": "[待翻译] Quick Presets"
+      },
+      {
+        "en": "Reload Config",
+        "zh": "[待翻译] Reload Config"
+      },
+      {
+        "en": "Remove filter",
+        "zh": "移除 筛选"
+      },
+      {
+        "en": "Search skills",
+        "zh": "搜索 技能"
+      },
+      {
+        "en": "Send messages",
+        "zh": "发送 messages"
+      },
+      {
+        "en": "Show Advanced",
+        "zh": "Show 高级"
+      },
+      {
+        "en": "Skill enabled",
+        "zh": "技能 enabled"
+      },
+      {
+        "en": "Skills Filter",
+        "zh": "技能 筛选"
+      },
+      {
+        "en": "System Prompt",
+        "zh": "系统 Prompt"
+      },
+      {
+        "en": "Tick Interval",
+        "zh": "[待翻译] Tick Interval"
+      },
+      {
+        "en": "Top Providers",
+        "zh": "[待翻译] Top Providers"
+      },
+      {
+        "en": "Unpin filters",
+        "zh": "[待翻译] Unpin filters"
+      },
+      {
+        "en": "Zalo Personal",
+        "zh": "[待翻译] Zalo Personal"
+      }
+    ],
+    "14": [
+      {
+        "en": "Attached image",
+        "zh": "[待翻译] Attached image"
+      },
+      {
+        "en": "Authentication",
+        "zh": "认证"
+      },
+      {
+        "en": "Change Gateway",
+        "zh": "[待翻译] Change Gateway"
+      },
+      {
+        "en": "Expand sidebar",
+        "zh": "[待翻译] Expand sidebar"
+      },
+      {
+        "en": "Gateway Access",
+        "zh": "[待翻译] Gateway Access"
+      },
+      {
+        "en": "Identity Emoji",
+        "zh": "[待翻译] Identity Emoji"
+      },
+      {
+        "en": "Load approvals",
+        "zh": "[待翻译] Load approvals"
+      },
+      {
+        "en": "Name required.",
+        "zh": "名称 required."
+      },
+      {
+        "en": "Point expected",
+        "zh": "[待翻译] Point expected"
+      },
+      {
+        "en": "Schedule tasks",
+        "zh": "计划 tasks"
+      },
+      {
+        "en": "Search the web",
+        "zh": "搜索 the web"
+      },
+      {
+        "en": "Session Detail",
+        "zh": "会话 Detail"
+      },
+      {
+        "en": "Session status",
+        "zh": "会话 状态"
+      },
+      {
+        "en": "Skill disabled",
+        "zh": "技能 disabled"
+      },
+      {
+        "en": "Usage Overview",
+        "zh": "[待翻译] Usage Overview"
+      },
+      {
+        "en": "WhatsApp Login",
+        "zh": "[待翻译] WhatsApp Login"
+      }
+    ],
+    "15": [
+      {
+        "en": "Built-in Skills",
+        "zh": "Built-in 技能"
+      },
+      {
+        "en": "Clear Selection",
+        "zh": "清空 Selection"
+      },
+      {
+        "en": "Default Session",
+        "zh": "Default 会话"
+      },
+      {
+        "en": "Exit focus mode",
+        "zh": "[待翻译] Exit focus mode"
+      },
+      {
+        "en": "Gateway control",
+        "zh": "[待翻译] Gateway control"
+      },
+      {
+        "en": "Inherit default",
+        "zh": "[待翻译] Inherit default"
+      },
+      {
+        "en": "Model Selection",
+        "zh": "模型 Selection"
+      },
+      {
+        "en": "No channel data",
+        "zh": "No 频道 data"
+      },
+      {
+        "en": "Peak Error Days",
+        "zh": "Peak 错误 Days"
+      },
+      {
+        "en": "Profile picture",
+        "zh": "[待翻译] Profile picture"
+      },
+      {
+        "en": "Semantic search",
+        "zh": "Semantic 搜索"
+      },
+      {
+        "en": "Send to session",
+        "zh": "发送 to 会话"
+      },
+      {
+        "en": "Session history",
+        "zh": "会话 历史"
+      },
+      {
+        "en": "Spawn sub-agent",
+        "zh": "Spawn sub-代理"
+      },
+      {
+        "en": "Tailscale Serve",
+        "zh": "[待翻译] Tailscale Serve"
+      },
+      {
+        "en": "Unsaved changes",
+        "zh": "[待翻译] Unsaved changes"
+      },
+      {
+        "en": "Usage Over Time",
+        "zh": "[待翻译] Usage Over Time"
+      },
+      {
+        "en": "Value passed to",
+        "zh": "[待翻译] Value passed to"
+      }
+    ],
+    "16": [
+      {
+        "en": "Collapse sidebar",
+        "zh": "[待翻译] Collapse sidebar"
+      },
+      {
+        "en": "Control canvases",
+        "zh": "[待翻译] Control canvases"
+      },
+      {
+        "en": "Copy as markdown",
+        "zh": "复制 as markdown"
+      },
+      {
+        "en": "Installed Skills",
+        "zh": "Installed 技能"
+      },
+      {
+        "en": "No provider data",
+        "zh": "No 提供商 data"
+      },
+      {
+        "en": "No snapshot yet.",
+        "zh": "[待翻译] No snapshot yet."
+      },
+      {
+        "en": "Peak Error Hours",
+        "zh": "Peak 错误 Hours"
+      },
+      {
+        "en": "Reset to default",
+        "zh": "重置 to default"
+      },
+      {
+        "en": "Satoshi Nakamoto",
+        "zh": "[待翻译] Satoshi Nakamoto"
+      },
+      {
+        "en": "TrustedScriptURL",
+        "zh": "[待翻译] TrustedScriptURL"
+      },
+      {
+        "en": "Workspace Skills",
+        "zh": "Workspace 技能"
+      }
+    ],
+    "17": [
+      {
+        "en": "Copy session name",
+        "zh": "复制 会话 名称"
+      },
+      {
+        "en": "Fetch web content",
+        "zh": "[待翻译] Fetch web content"
+      },
+      {
+        "en": "Gateway Dashboard",
+        "zh": "Gateway 仪表板"
+      },
+      {
+        "en": "Invalid run time.",
+        "zh": "[待翻译] Invalid run time."
+      },
+      {
+        "en": "Lightning Address",
+        "zh": "[待翻译] Lightning Address"
+      },
+      {
+        "en": "No instances yet.",
+        "zh": "[待翻译] No instances yet."
+      },
+      {
+        "en": "Read memory files",
+        "zh": "Read 记忆 files"
+      },
+      {
+        "en": "Refresh chat data",
+        "zh": "刷新 chat data"
+      },
+      {
+        "en": "Remove attachment",
+        "zh": "移除 attachment"
+      }
+    ],
+    "18": [
+      {
+        "en": "Attachment preview",
+        "zh": "[待翻译] Attachment preview"
+      },
+      {
+        "en": "Import from Relays",
+        "zh": "[待翻译] Import from Relays"
+      },
+      {
+        "en": "Make precise edits",
+        "zh": "[待翻译] Make precise edits"
+      },
+      {
+        "en": "No critical issues",
+        "zh": "[待翻译] No critical issues"
+      },
+      {
+        "en": "Read file contents",
+        "zh": "[待翻译] Read file contents"
+      },
+      {
+        "en": "Run shell commands",
+        "zh": "[待翻译] Run shell commands"
+      },
+      {
+        "en": "Search settings...",
+        "zh": "[待翻译] Search settings..."
+      }
+    ],
+    "19": [
+      {
+        "en": "Connected Instances",
+        "zh": "已连接 Instances"
+      },
+      {
+        "en": "Control web browser",
+        "zh": "[待翻译] Control web browser"
+      },
+      {
+        "en": "Image understanding",
+        "zh": "[待翻译] Image understanding"
+      },
+      {
+        "en": "Search conversation",
+        "zh": "搜索 conversation"
+      },
+      {
+        "en": "TrustedTypes policy",
+        "zh": "[待翻译] TrustedTypes policy"
+      }
+    ],
+    "20": [
+      {
+        "en": "No presence payload.",
+        "zh": "[待翻译] No presence payload."
+      }
+    ],
+    "21": [
+      {
+        "en": "Close session details",
+        "zh": "关闭 会话 details"
+      },
+      {
+        "en": "Custom slash commands",
+        "zh": "[待翻译] Custom slash commands"
+      },
+      {
+        "en": "Environment Variables",
+        "zh": "[待翻译] Environment Variables"
+      },
+      {
+        "en": "Remove queued message",
+        "zh": "移除 queued 消息"
+      },
+      {
+        "en": "Your personal website",
+        "zh": "[待翻译] Your personal website"
+      }
+    ],
+    "22": [
+      {
+        "en": "Default prompt policy.",
+        "zh": "[待翻译] Default prompt policy."
+      },
+      {
+        "en": "Default security mode.",
+        "zh": "Default 安全 mode."
+      },
+      {
+        "en": "Tokens read from cache",
+        "zh": "令牌 read from cache"
+      },
+      {
+        "en": "Your full display name",
+        "zh": "Your full display 名称"
+      }
+    ],
+    "23": [
+      {
+        "en": "Agent message required.",
+        "zh": "代理 消息 required."
+      },
+      {
+        "en": "Assistant output tokens",
+        "zh": "助手 output 令牌"
+      },
+      {
+        "en": "Profile picture preview",
+        "zh": "[待翻译] Profile picture preview"
+      },
+      {
+        "en": "Tokens written to cache",
+        "zh": "令牌 written to cache"
+      }
+    ],
+    "24": [
+      {
+        "en": "Base context per message",
+        "zh": "Base 上下文 per 消息"
+      },
+      {
+        "en": "Invalid interval amount.",
+        "zh": "[待翻译] Invalid interval amount."
+      },
+      {
+        "en": "Webhooks and event hooks",
+        "zh": "Webhooks and 事件 hooks"
+      }
+    ],
+    "25": [
+      {
+        "en": "Create or overwrite files",
+        "zh": "创建 or overwrite files"
+      },
+      {
+        "en": "Cron expression required.",
+        "zh": "[待翻译] Cron expression required."
+      },
+      {
+        "en": "Voice and speech settings",
+        "zh": "Voice and speech 设置"
+      }
+    ],
+    "26": [
+      {
+        "en": "A brief bio or description",
+        "zh": "A brief bio or 描述"
+      },
+      {
+        "en": "Disabled during onboarding",
+        "zh": "[待翻译] Disabled during onboarding"
+      },
+      {
+        "en": "Disconnected from gateway.",
+        "zh": "已断开 from gateway."
+      },
+      {
+        "en": "Key bindings and shortcuts",
+        "zh": "密钥 bindings and shortcuts"
+      },
+      {
+        "en": "User interface preferences",
+        "zh": "用户 interface 偏好设置"
+      }
+    ],
+    "27": [
+      {
+        "en": "Browser automation settings",
+        "zh": "Browser automation 设置"
+      },
+      {
+        "en": "HTTPS URL to a banner image",
+        "zh": "[待翻译] HTTPS URL to a banner image"
+      },
+      {
+        "en": "Manage background processes",
+        "zh": "[待翻译] Manage background processes"
+      },
+      {
+        "en": "No settings in this section",
+        "zh": "No 设置 in this section"
+      },
+      {
+        "en": "System event text required.",
+        "zh": "系统 事件 text required."
+      },
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      }
+    ],
+    "28": [
+      {
+        "en": "Agent workspace and routing.",
+        "zh": "代理 workspace and routing."
+      },
+      {
+        "en": "Canvas rendering and display",
+        "zh": "[待翻译] Canvas rendering and display"
+      },
+      {
+        "en": "Profile published to relays.",
+        "zh": "[待翻译] Profile published to relays."
+      },
+      {
+        "en": "Skill packs and capabilities",
+        "zh": "技能 packs and capabilities"
+      }
+    ],
+    "29": [
+      {
+        "en": "Manage channels and settings.",
+        "zh": "Manage channels and 设置."
+      },
+      {
+        "en": "Tell people about yourself...",
+        "zh": "[待翻译] Tell people about yourself..."
+      }
+    ],
+    "30": [
+      {
+        "en": "Scheduled tasks and automation",
+        "zh": "[待翻译] Scheduled tasks and automation"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      }
+    ],
+    "31": [
+      {
+        "en": "Distinct sessions in the range.",
+        "zh": "Distinct 会话 in the range."
+      }
+    ],
+    "32": [
+      {
+        "en": "Plugin management and extensions",
+        "zh": "插件 management and extensions"
+      },
+      {
+        "en": "Service discovery and networking",
+        "zh": "[待翻译] Service discovery and networking"
+      }
+    ],
+    "33": [
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      },
+      {
+        "en": "Workspace and scheduling targets.",
+        "zh": "[待翻译] Workspace and scheduling targets."
+      }
+    ],
+    "34": [
+      {
+        "en": "Session management and persistence",
+        "zh": "会话 management and persistence"
+      }
+    ],
+    "35": [
+      {
+        "en": "Broadcast and notification settings",
+        "zh": "Broadcast and notification 设置"
+      },
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      },
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      },
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      }
+    ],
+    "36": [
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      }
+    ],
+    "37": [
+      {
+        "en": "AI model configurations and providers",
+        "zh": "AI 模型 configurations and providers"
+      },
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      },
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      }
+    ],
+    "38": [
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "40": [
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      },
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      }
+    ],
+    "41": [
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      }
+    ],
+    "42": [
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      },
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      }
+    ],
+    "43": [
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "44": [
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      },
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      }
+    ],
+    "45": [
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      }
+    ],
+    "46": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      }
+    ],
+    "47": [
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      }
+    ],
+    "48": [
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      }
+    ],
+    "49": [
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      }
+    ],
+    "50": [
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      }
+    ],
+    "51": [
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      },
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      }
+    ],
+    "52": [
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      }
+    ],
+    "53": [
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      }
+    ],
+    "56": [
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      }
+    ],
+    "70": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ]
+  },
+  "byFirstLetter": {
+    "a": [
+      {
+        "en": "A brief bio or description",
+        "zh": "A brief bio or 描述"
+      },
+      {
+        "en": "AI model configurations and providers",
+        "zh": "AI 模型 configurations and providers"
+      },
+      {
+        "en": "API key saved",
+        "zh": "API 密钥 saved"
+      },
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      },
+      {
+        "en": "Active",
+        "zh": "[待翻译] Active"
+      },
+      {
+        "en": "Add",
+        "zh": "添加"
+      },
+      {
+        "en": "Add Entry",
+        "zh": "添加 Entry"
+      },
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      },
+      {
+        "en": "Add job",
+        "zh": "添加 job"
+      },
+      {
+        "en": "Advanced",
+        "zh": "高级"
+      },
+      {
+        "en": "Agent",
+        "zh": "代理"
+      },
+      {
+        "en": "Agent Context",
+        "zh": "代理 上下文"
+      },
+      {
+        "en": "Agent Cron",
+        "zh": "代理 Cron"
+      },
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      },
+      {
+        "en": "Agent message",
+        "zh": "代理 消息"
+      },
+      {
+        "en": "Agent message required.",
+        "zh": "代理 消息 required."
+      },
+      {
+        "en": "Agent workspace and routing.",
+        "zh": "代理 workspace and routing."
+      },
+      {
+        "en": "Agents",
+        "zh": "[待翻译] Agents"
+      },
+      {
+        "en": "All Settings",
+        "zh": "All 设置"
+      },
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      },
+      {
+        "en": "Allowlist",
+        "zh": "[待翻译] Allowlist"
+      },
+      {
+        "en": "Always",
+        "zh": "[待翻译] Always"
+      },
+      {
+        "en": "App Login",
+        "zh": "[待翻译] App Login"
+      },
+      {
+        "en": "App Web",
+        "zh": "[待翻译] App Web"
+      },
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      },
+      {
+        "en": "Apply",
+        "zh": "[待翻译] Apply"
+      },
+      {
+        "en": "Ascending",
+        "zh": "[待翻译] Ascending"
+      },
+      {
+        "en": "Ask",
+        "zh": "[待翻译] Ask"
+      },
+      {
+        "en": "Assistant",
+        "zh": "助手"
+      },
+      {
+        "en": "Assistant output tokens",
+        "zh": "助手 output 令牌"
+      },
+      {
+        "en": "Attach",
+        "zh": "[待翻译] Attach"
+      },
+      {
+        "en": "Attached image",
+        "zh": "[待翻译] Attached image"
+      },
+      {
+        "en": "Attachment preview",
+        "zh": "[待翻译] Attachment preview"
+      },
+      {
+        "en": "Audio",
+        "zh": "[待翻译] Audio"
+      },
+      {
+        "en": "Authentication",
+        "zh": "认证"
+      },
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      },
+      {
+        "en": "Automation",
+        "zh": "[待翻译] Automation"
+      },
+      {
+        "en": "Avatar URL",
+        "zh": "[待翻译] Avatar URL"
+      },
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      },
+      {
+        "en": "Avg Cost",
+        "zh": "[待翻译] Avg Cost"
+      },
+      {
+        "en": "Avg Tokens",
+        "zh": "Avg 令牌"
+      }
+    ],
+    "b": [
+      {
+        "en": "BODY",
+        "zh": "[待翻译] BODY"
+      },
+      {
+        "en": "Banner URL",
+        "zh": "[待翻译] Banner URL"
+      },
+      {
+        "en": "Base context per message",
+        "zh": "Base 上下文 per 消息"
+      },
+      {
+        "en": "Bash",
+        "zh": "[待翻译] Bash"
+      },
+      {
+        "en": "Bindings",
+        "zh": "[待翻译] Bindings"
+      },
+      {
+        "en": "Bio",
+        "zh": "[待翻译] Bio"
+      },
+      {
+        "en": "BlueBubbles",
+        "zh": "[待翻译] BlueBubbles"
+      },
+      {
+        "en": "Broadcast",
+        "zh": "[待翻译] Broadcast"
+      },
+      {
+        "en": "Broadcast and notification settings",
+        "zh": "Broadcast and notification 设置"
+      },
+      {
+        "en": "Browser",
+        "zh": "[待翻译] Browser"
+      },
+      {
+        "en": "Browser automation settings",
+        "zh": "Browser automation 设置"
+      },
+      {
+        "en": "Built-in Skills",
+        "zh": "Built-in 技能"
+      },
+      {
+        "en": "By Type",
+        "zh": "By 类型"
+      }
+    ],
+    "c": [
+      {
+        "en": "CWD",
+        "zh": "[待翻译] CWD"
+      },
+      {
+        "en": "Cache Hit",
+        "zh": "[待翻译] Cache Hit"
+      },
+      {
+        "en": "Cache Read",
+        "zh": "[待翻译] Cache Read"
+      },
+      {
+        "en": "Cache Write",
+        "zh": "[待翻译] Cache Write"
+      },
+      {
+        "en": "Cancel",
+        "zh": "取消"
+      },
+      {
+        "en": "Canvas",
+        "zh": "[待翻译] Canvas"
+      },
+      {
+        "en": "Canvas Host",
+        "zh": "[待翻译] Canvas Host"
+      },
+      {
+        "en": "Canvas rendering and display",
+        "zh": "[待翻译] Canvas rendering and display"
+      },
+      {
+        "en": "Change Gateway",
+        "zh": "[待翻译] Change Gateway"
+      },
+      {
+        "en": "Channel",
+        "zh": "频道"
+      },
+      {
+        "en": "Channels",
+        "zh": "[待翻译] Channels"
+      },
+      {
+        "en": "Chat",
+        "zh": "[待翻译] Chat"
+      },
+      {
+        "en": "Clear",
+        "zh": "清空"
+      },
+      {
+        "en": "Clear All",
+        "zh": "清空 All"
+      },
+      {
+        "en": "Clear Selection",
+        "zh": "清空 Selection"
+      },
+      {
+        "en": "Click Connect",
+        "zh": "[待翻译] Click Connect"
+      },
+      {
+        "en": "Close",
+        "zh": "关闭"
+      },
+      {
+        "en": "Close session details",
+        "zh": "关闭 会话 details"
+      },
+      {
+        "en": "Close sidebar",
+        "zh": "关闭 sidebar"
+      },
+      {
+        "en": "Coding",
+        "zh": "[待翻译] Coding"
+      },
+      {
+        "en": "Collapse",
+        "zh": "[待翻译] Collapse"
+      },
+      {
+        "en": "Collapse All",
+        "zh": "[待翻译] Collapse All"
+      },
+      {
+        "en": "Collapse sidebar",
+        "zh": "[待翻译] Collapse sidebar"
+      },
+      {
+        "en": "Commands",
+        "zh": "[待翻译] Commands"
+      },
+      {
+        "en": "Config",
+        "zh": "[待翻译] Config"
+      },
+      {
+        "en": "Connected",
+        "zh": "已连接"
+      },
+      {
+        "en": "Connected Instances",
+        "zh": "已连接 Instances"
+      },
+      {
+        "en": "Content-Type",
+        "zh": "Content-类型"
+      },
+      {
+        "en": "Control",
+        "zh": "[待翻译] Control"
+      },
+      {
+        "en": "Control canvases",
+        "zh": "[待翻译] Control canvases"
+      },
+      {
+        "en": "Control web browser",
+        "zh": "[待翻译] Control web browser"
+      },
+      {
+        "en": "Copied",
+        "zh": "[待翻译] Copied"
+      },
+      {
+        "en": "Copy",
+        "zh": "复制"
+      },
+      {
+        "en": "Copy as markdown",
+        "zh": "复制 as markdown"
+      },
+      {
+        "en": "Copy failed",
+        "zh": "复制 failed"
+      },
+      {
+        "en": "Copy session name",
+        "zh": "复制 会话 名称"
+      },
+      {
+        "en": "Core Files",
+        "zh": "[待翻译] Core Files"
+      },
+      {
+        "en": "Cost",
+        "zh": "[待翻译] Cost"
+      },
+      {
+        "en": "Create",
+        "zh": "创建"
+      },
+      {
+        "en": "Create or overwrite files",
+        "zh": "创建 or overwrite files"
+      },
+      {
+        "en": "Cron",
+        "zh": "[待翻译] Cron"
+      },
+      {
+        "en": "Cron Jobs",
+        "zh": "[待翻译] Cron Jobs"
+      },
+      {
+        "en": "Cron expression required.",
+        "zh": "[待翻译] Cron expression required."
+      },
+      {
+        "en": "Custom slash commands",
+        "zh": "[待翻译] Custom slash commands"
+      }
+    ],
+    "d": [
+      {
+        "en": "Daily Usage",
+        "zh": "[待翻译] Daily Usage"
+      },
+      {
+        "en": "Dark",
+        "zh": "[待翻译] Dark"
+      },
+      {
+        "en": "Dark theme",
+        "zh": "[待翻译] Dark theme"
+      },
+      {
+        "en": "Dashboard",
+        "zh": "仪表板"
+      },
+      {
+        "en": "Debug",
+        "zh": "调试"
+      },
+      {
+        "en": "Default Session",
+        "zh": "Default 会话"
+      },
+      {
+        "en": "Default prompt policy.",
+        "zh": "[待翻译] Default prompt policy."
+      },
+      {
+        "en": "Default security mode.",
+        "zh": "Default 安全 mode."
+      },
+      {
+        "en": "Delete",
+        "zh": "删除"
+      },
+      {
+        "en": "Deny",
+        "zh": "[待翻译] Deny"
+      },
+      {
+        "en": "Descending",
+        "zh": "[待翻译] Descending"
+      },
+      {
+        "en": "Description",
+        "zh": "描述"
+      },
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      },
+      {
+        "en": "Disable",
+        "zh": "[待翻译] Disable"
+      },
+      {
+        "en": "Disable All",
+        "zh": "[待翻译] Disable All"
+      },
+      {
+        "en": "Disabled",
+        "zh": "[待翻译] Disabled"
+      },
+      {
+        "en": "Disabled during onboarding",
+        "zh": "[待翻译] Disabled during onboarding"
+      },
+      {
+        "en": "Disconnected",
+        "zh": "已断开"
+      },
+      {
+        "en": "Disconnected from gateway.",
+        "zh": "已断开 from gateway."
+      },
+      {
+        "en": "Discord",
+        "zh": "[待翻译] Discord"
+      },
+      {
+        "en": "Discovery",
+        "zh": "[待翻译] Discovery"
+      },
+      {
+        "en": "Display Name",
+        "zh": "Display 名称"
+      },
+      {
+        "en": "Distinct sessions in the range.",
+        "zh": "Distinct 会话 in the range."
+      }
+    ],
+    "e": [
+      {
+        "en": "Edit",
+        "zh": "编辑"
+      },
+      {
+        "en": "Edit Profile",
+        "zh": "编辑 Profile"
+      },
+      {
+        "en": "Empty State",
+        "zh": "[待翻译] Empty State"
+      },
+      {
+        "en": "Enable",
+        "zh": "[待翻译] Enable"
+      },
+      {
+        "en": "Enable All",
+        "zh": "[待翻译] Enable All"
+      },
+      {
+        "en": "Enabled",
+        "zh": "[待翻译] Enabled"
+      },
+      {
+        "en": "End Date",
+        "zh": "[待翻译] End Date"
+      },
+      {
+        "en": "Enter",
+        "zh": "[待翻译] Enter"
+      },
+      {
+        "en": "Environment",
+        "zh": "[待翻译] Environment"
+      },
+      {
+        "en": "Environment Variables",
+        "zh": "[待翻译] Environment Variables"
+      },
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      },
+      {
+        "en": "Error",
+        "zh": "错误"
+      },
+      {
+        "en": "Error Rate",
+        "zh": "错误 Rate"
+      },
+      {
+        "en": "Event Log",
+        "zh": "事件 Log"
+      },
+      {
+        "en": "Exit focus mode",
+        "zh": "[待翻译] Exit focus mode"
+      },
+      {
+        "en": "Expand All",
+        "zh": "[待翻译] Expand All"
+      },
+      {
+        "en": "Expand all",
+        "zh": "[待翻译] Expand all"
+      },
+      {
+        "en": "Expand sidebar",
+        "zh": "[待翻译] Expand sidebar"
+      },
+      {
+        "en": "Extra Skills",
+        "zh": "Extra 技能"
+      }
+    ],
+    "f": [
+      {
+        "en": "Fetch web content",
+        "zh": "[待翻译] Fetch web content"
+      },
+      {
+        "en": "Files",
+        "zh": "[待翻译] Files"
+      },
+      {
+        "en": "Filter",
+        "zh": "筛选"
+      },
+      {
+        "en": "Fri",
+        "zh": "[待翻译] Fri"
+      },
+      {
+        "en": "Full",
+        "zh": "[待翻译] Full"
+      }
+    ],
+    "g": [
+      {
+        "en": "GB",
+        "zh": "[待翻译] GB"
+      },
+      {
+        "en": "GET",
+        "zh": "[待翻译] GET"
+      },
+      {
+        "en": "Gateway",
+        "zh": "[待翻译] Gateway"
+      },
+      {
+        "en": "Gateway Access",
+        "zh": "[待翻译] Gateway Access"
+      },
+      {
+        "en": "Gateway Dashboard",
+        "zh": "Gateway 仪表板"
+      },
+      {
+        "en": "Gateway Token",
+        "zh": "Gateway 令牌"
+      },
+      {
+        "en": "Gateway control",
+        "zh": "[待翻译] Gateway control"
+      },
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      },
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      },
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      },
+      {
+        "en": "Google Chat",
+        "zh": "[待翻译] Google Chat"
+      }
+    ],
+    "h": [
+      {
+        "en": "HTML",
+        "zh": "[待翻译] HTML"
+      },
+      {
+        "en": "HTTPS URL to a banner image",
+        "zh": "[待翻译] HTTPS URL to a banner image"
+      },
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      },
+      {
+        "en": "Hide Advanced",
+        "zh": "Hide 高级"
+      },
+      {
+        "en": "Hooks",
+        "zh": "[待翻译] Hooks"
+      },
+      {
+        "en": "Host",
+        "zh": "[待翻译] Host"
+      }
+    ],
+    "i": [
+      {
+        "en": "Identity Emoji",
+        "zh": "[待翻译] Identity Emoji"
+      },
+      {
+        "en": "Identity Name",
+        "zh": "Identity 名称"
+      },
+      {
+        "en": "Image understanding",
+        "zh": "[待翻译] Image understanding"
+      },
+      {
+        "en": "Import from Relays",
+        "zh": "[待翻译] Import from Relays"
+      },
+      {
+        "en": "Importing...",
+        "zh": "[待翻译] Importing..."
+      },
+      {
+        "en": "Info",
+        "zh": "信息"
+      },
+      {
+        "en": "Inherit default",
+        "zh": "[待翻译] Inherit default"
+      },
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      },
+      {
+        "en": "Installed",
+        "zh": "[待翻译] Installed"
+      },
+      {
+        "en": "Installed Skills",
+        "zh": "Installed 技能"
+      },
+      {
+        "en": "Instances",
+        "zh": "[待翻译] Instances"
+      },
+      {
+        "en": "Invalid interval amount.",
+        "zh": "[待翻译] Invalid interval amount."
+      },
+      {
+        "en": "Invalid run time.",
+        "zh": "[待翻译] Invalid run time."
+      }
+    ],
+    "j": [
+      {
+        "en": "JSON value",
+        "zh": "[待翻译] JSON value"
+      }
+    ],
+    "k": [
+      {
+        "en": "KB",
+        "zh": "[待翻译] KB"
+      },
+      {
+        "en": "Key",
+        "zh": "密钥"
+      },
+      {
+        "en": "Key bindings and shortcuts",
+        "zh": "密钥 bindings and shortcuts"
+      }
+    ],
+    "l": [
+      {
+        "en": "LINK",
+        "zh": "[待翻译] LINK"
+      },
+      {
+        "en": "Last Channels",
+        "zh": "[待翻译] Last Channels"
+      },
+      {
+        "en": "Light",
+        "zh": "[待翻译] Light"
+      },
+      {
+        "en": "Light theme",
+        "zh": "[待翻译] Light theme"
+      },
+      {
+        "en": "Lightning Address",
+        "zh": "[待翻译] Lightning Address"
+      },
+      {
+        "en": "Link Whats",
+        "zh": "[待翻译] Link Whats"
+      },
+      {
+        "en": "List agents",
+        "zh": "[待翻译] List agents"
+      },
+      {
+        "en": "List sessions",
+        "zh": "List 会话"
+      },
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      },
+      {
+        "en": "Load approvals",
+        "zh": "[待翻译] Load approvals"
+      },
+      {
+        "en": "Load config",
+        "zh": "[待翻译] Load config"
+      },
+      {
+        "en": "Loading",
+        "zh": "加载中"
+      },
+      {
+        "en": "Local",
+        "zh": "[待翻译] Local"
+      },
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      },
+      {
+        "en": "Logged out.",
+        "zh": "[待翻译] Logged out."
+      },
+      {
+        "en": "Logging",
+        "zh": "[待翻译] Logging"
+      },
+      {
+        "en": "Logs",
+        "zh": "日志"
+      }
+    ],
+    "m": [
+      {
+        "en": "MB",
+        "zh": "[待翻译] MB"
+      },
+      {
+        "en": "Make precise edits",
+        "zh": "[待翻译] Make precise edits"
+      },
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      },
+      {
+        "en": "Manage background processes",
+        "zh": "[待翻译] Manage background processes"
+      },
+      {
+        "en": "Manage channels and settings.",
+        "zh": "Manage channels and 设置."
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      },
+      {
+        "en": "Matrix",
+        "zh": "[待翻译] Matrix"
+      },
+      {
+        "en": "Media",
+        "zh": "[待翻译] Media"
+      },
+      {
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      },
+      {
+        "en": "Messages",
+        "zh": "[待翻译] Messages"
+      },
+      {
+        "en": "Messaging",
+        "zh": "[待翻译] Messaging"
+      },
+      {
+        "en": "Metadata",
+        "zh": "[待翻译] Metadata"
+      },
+      {
+        "en": "Minimal",
+        "zh": "[待翻译] Minimal"
+      },
+      {
+        "en": "Missing",
+        "zh": "[待翻译] Missing"
+      },
+      {
+        "en": "Model",
+        "zh": "模型"
+      },
+      {
+        "en": "Model Mix",
+        "zh": "模型 Mix"
+      },
+      {
+        "en": "Model Selection",
+        "zh": "模型 Selection"
+      },
+      {
+        "en": "Models",
+        "zh": "[待翻译] Models"
+      },
+      {
+        "en": "Mon",
+        "zh": "[待翻译] Mon"
+      }
+    ],
+    "n": [
+      {
+        "en": "Name",
+        "zh": "名称"
+      },
+      {
+        "en": "Name required.",
+        "zh": "名称 required."
+      },
+      {
+        "en": "New",
+        "zh": "新建"
+      },
+      {
+        "en": "New Job",
+        "zh": "新建 Job"
+      },
+      {
+        "en": "New pattern",
+        "zh": "新建 pattern"
+      },
+      {
+        "en": "New session",
+        "zh": "新建 会话"
+      },
+      {
+        "en": "No",
+        "zh": "[待翻译] No"
+      },
+      {
+        "en": "No agent data",
+        "zh": "No 代理 data"
+      },
+      {
+        "en": "No channel data",
+        "zh": "No 频道 data"
+      },
+      {
+        "en": "No critical issues",
+        "zh": "[待翻译] No critical issues"
+      },
+      {
+        "en": "No error data",
+        "zh": "No 错误 data"
+      },
+      {
+        "en": "No instances yet.",
+        "zh": "[待翻译] No instances yet."
+      },
+      {
+        "en": "No model data",
+        "zh": "No 模型 data"
+      },
+      {
+        "en": "No presence payload.",
+        "zh": "[待翻译] No presence payload."
+      },
+      {
+        "en": "No provider data",
+        "zh": "No 提供商 data"
+      },
+      {
+        "en": "No settings in this section",
+        "zh": "No 设置 in this section"
+      },
+      {
+        "en": "No snapshot yet.",
+        "zh": "[待翻译] No snapshot yet."
+      },
+      {
+        "en": "No tool calls",
+        "zh": "No 工具 calls"
+      },
+      {
+        "en": "Nodes",
+        "zh": "[待翻译] Nodes"
+      }
+    ],
+    "o": [
+      {
+        "en": "OK",
+        "zh": "[待翻译] OK"
+      },
+      {
+        "en": "Off",
+        "zh": "[待翻译] Off"
+      },
+      {
+        "en": "Offline",
+        "zh": "离线"
+      },
+      {
+        "en": "On miss",
+        "zh": "[待翻译] On miss"
+      },
+      {
+        "en": "Open",
+        "zh": "打开"
+      },
+      {
+        "en": "OpenClaw",
+        "zh": "[待翻译] OpenClaw"
+      },
+      {
+        "en": "Other Skills",
+        "zh": "Other 技能"
+      },
+      {
+        "en": "Overview",
+        "zh": "[待翻译] Overview"
+      }
+    ],
+    "p": [
+      {
+        "en": "POST",
+        "zh": "[待翻译] POST"
+      },
+      {
+        "en": "PUT",
+        "zh": "[待翻译] PUT"
+      },
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      },
+      {
+        "en": "Peak Error",
+        "zh": "Peak 错误"
+      },
+      {
+        "en": "Peak Error Days",
+        "zh": "Peak 错误 Days"
+      },
+      {
+        "en": "Peak Error Hours",
+        "zh": "Peak 错误 Hours"
+      },
+      {
+        "en": "Per Turn",
+        "zh": "[待翻译] Per Turn"
+      },
+      {
+        "en": "Pin",
+        "zh": "[待翻译] Pin"
+      },
+      {
+        "en": "Pin filters",
+        "zh": "[待翻译] Pin filters"
+      },
+      {
+        "en": "Pinned",
+        "zh": "[待翻译] Pinned"
+      },
+      {
+        "en": "Plugin management and extensions",
+        "zh": "插件 management and extensions"
+      },
+      {
+        "en": "Plugins",
+        "zh": "[待翻译] Plugins"
+      },
+      {
+        "en": "Point expected",
+        "zh": "[待翻译] Point expected"
+      },
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      },
+      {
+        "en": "Primary Model",
+        "zh": "Primary 模型"
+      },
+      {
+        "en": "Process",
+        "zh": "[待翻译] Process"
+      },
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      },
+      {
+        "en": "Profile picture",
+        "zh": "[待翻译] Profile picture"
+      },
+      {
+        "en": "Profile picture preview",
+        "zh": "[待翻译] Profile picture preview"
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      },
+      {
+        "en": "Profile published to relays.",
+        "zh": "[待翻译] Profile published to relays."
+      },
+      {
+        "en": "Provider",
+        "zh": "提供商"
+      },
+      {
+        "en": "Public Key",
+        "zh": "Public 密钥"
+      }
+    ],
+    "q": [
+      {
+        "en": "Queue",
+        "zh": "[待翻译] Queue"
+      },
+      {
+        "en": "Quick Presets",
+        "zh": "[待翻译] Quick Presets"
+      }
+    ],
+    "r": [
+      {
+        "en": "Read",
+        "zh": "[待翻译] Read"
+      },
+      {
+        "en": "Read file contents",
+        "zh": "[待翻译] Read file contents"
+      },
+      {
+        "en": "Read memory files",
+        "zh": "Read 记忆 files"
+      },
+      {
+        "en": "Refresh",
+        "zh": "刷新"
+      },
+      {
+        "en": "Refresh chat data",
+        "zh": "刷新 chat data"
+      },
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      },
+      {
+        "en": "Reload",
+        "zh": "[待翻译] Reload"
+      },
+      {
+        "en": "Reload Config",
+        "zh": "[待翻译] Reload Config"
+      },
+      {
+        "en": "Remove",
+        "zh": "移除"
+      },
+      {
+        "en": "Remove attachment",
+        "zh": "移除 attachment"
+      },
+      {
+        "en": "Remove entry",
+        "zh": "移除 entry"
+      },
+      {
+        "en": "Remove filter",
+        "zh": "移除 筛选"
+      },
+      {
+        "en": "Remove item",
+        "zh": "移除 item"
+      },
+      {
+        "en": "Remove queued message",
+        "zh": "移除 queued 消息"
+      },
+      {
+        "en": "Reset",
+        "zh": "重置"
+      },
+      {
+        "en": "Reset to default",
+        "zh": "重置 to default"
+      },
+      {
+        "en": "Resolved",
+        "zh": "[待翻译] Resolved"
+      },
+      {
+        "en": "Run shell commands",
+        "zh": "[待翻译] Run shell commands"
+      },
+      {
+        "en": "Runtime",
+        "zh": "[待翻译] Runtime"
+      }
+    ],
+    "s": [
+      {
+        "en": "Sat",
+        "zh": "[待翻译] Sat"
+      },
+      {
+        "en": "Satoshi Nakamoto",
+        "zh": "[待翻译] Satoshi Nakamoto"
+      },
+      {
+        "en": "Save",
+        "zh": "保存"
+      },
+      {
+        "en": "Saving",
+        "zh": "保存中"
+      },
+      {
+        "en": "Saving...",
+        "zh": "保存中..."
+      },
+      {
+        "en": "Schedule tasks",
+        "zh": "计划 tasks"
+      },
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      },
+      {
+        "en": "Scheduled tasks and automation",
+        "zh": "[待翻译] Scheduled tasks and automation"
+      },
+      {
+        "en": "Search",
+        "zh": "搜索"
+      },
+      {
+        "en": "Search conversation",
+        "zh": "搜索 conversation"
+      },
+      {
+        "en": "Search logs",
+        "zh": "搜索 日志"
+      },
+      {
+        "en": "Search settings...",
+        "zh": "[待翻译] Search settings..."
+      },
+      {
+        "en": "Search skills",
+        "zh": "搜索 技能"
+      },
+      {
+        "en": "Search the web",
+        "zh": "搜索 the web"
+      },
+      {
+        "en": "Security",
+        "zh": "安全"
+      },
+      {
+        "en": "Select All",
+        "zh": "[待翻译] Select All"
+      },
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      },
+      {
+        "en": "Semantic search",
+        "zh": "Semantic 搜索"
+      },
+      {
+        "en": "Send",
+        "zh": "发送"
+      },
+      {
+        "en": "Send messages",
+        "zh": "发送 messages"
+      },
+      {
+        "en": "Send to session",
+        "zh": "发送 to 会话"
+      },
+      {
+        "en": "Service discovery and networking",
+        "zh": "[待翻译] Service discovery and networking"
+      },
+      {
+        "en": "Session",
+        "zh": "会话"
+      },
+      {
+        "en": "Session Detail",
+        "zh": "会话 Detail"
+      },
+      {
+        "en": "Session history",
+        "zh": "会话 历史"
+      },
+      {
+        "en": "Session management and persistence",
+        "zh": "会话 management and persistence"
+      },
+      {
+        "en": "Session status",
+        "zh": "会话 状态"
+      },
+      {
+        "en": "Sessions",
+        "zh": "会话"
+      },
+      {
+        "en": "Settings",
+        "zh": "设置"
+      },
+      {
+        "en": "Setup Wizard",
+        "zh": "[待翻译] Setup Wizard"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      },
+      {
+        "en": "Show Advanced",
+        "zh": "Show 高级"
+      },
+      {
+        "en": "Show QR",
+        "zh": "[待翻译] Show QR"
+      },
+      {
+        "en": "Signal",
+        "zh": "[待翻译] Signal"
+      },
+      {
+        "en": "Skill disabled",
+        "zh": "技能 disabled"
+      },
+      {
+        "en": "Skill enabled",
+        "zh": "技能 enabled"
+      },
+      {
+        "en": "Skill packs and capabilities",
+        "zh": "技能 packs and capabilities"
+      },
+      {
+        "en": "Skills",
+        "zh": "技能"
+      },
+      {
+        "en": "Skills Filter",
+        "zh": "技能 筛选"
+      },
+      {
+        "en": "Slack",
+        "zh": "[待翻译] Slack"
+      },
+      {
+        "en": "Sort",
+        "zh": "排序"
+      },
+      {
+        "en": "Spawn sub-agent",
+        "zh": "Spawn sub-代理"
+      },
+      {
+        "en": "Start Date",
+        "zh": "[待翻译] Start Date"
+      },
+      {
+        "en": "Status",
+        "zh": "状态"
+      },
+      {
+        "en": "Stop",
+        "zh": "[待翻译] Stop"
+      },
+      {
+        "en": "Success",
+        "zh": "成功"
+      },
+      {
+        "en": "Sun",
+        "zh": "[待翻译] Sun"
+      },
+      {
+        "en": "System",
+        "zh": "系统"
+      },
+      {
+        "en": "System Prompt",
+        "zh": "系统 Prompt"
+      },
+      {
+        "en": "System event text required.",
+        "zh": "系统 事件 text required."
+      },
+      {
+        "en": "System text",
+        "zh": "系统 text"
+      },
+      {
+        "en": "System theme",
+        "zh": "系统 theme"
+      }
+    ],
+    "t": [
+      {
+        "en": "TB",
+        "zh": "[待翻译] TB"
+      },
+      {
+        "en": "Tailscale Serve",
+        "zh": "[待翻译] Tailscale Serve"
+      },
+      {
+        "en": "Talk",
+        "zh": "[待翻译] Talk"
+      },
+      {
+        "en": "Teams",
+        "zh": "[待翻译] Teams"
+      },
+      {
+        "en": "Telegram",
+        "zh": "[待翻译] Telegram"
+      },
+      {
+        "en": "Tell people about yourself...",
+        "zh": "[待翻译] Tell people about yourself..."
+      },
+      {
+        "en": "Theme",
+        "zh": "[待翻译] Theme"
+      },
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      },
+      {
+        "en": "Thu",
+        "zh": "[待翻译] Thu"
+      },
+      {
+        "en": "Tick Interval",
+        "zh": "[待翻译] Tick Interval"
+      },
+      {
+        "en": "Time zone",
+        "zh": "[待翻译] Time zone"
+      },
+      {
+        "en": "Today",
+        "zh": "[待翻译] Today"
+      },
+      {
+        "en": "Token",
+        "zh": "令牌"
+      },
+      {
+        "en": "Token Usage",
+        "zh": "令牌 Usage"
+      },
+      {
+        "en": "Token with",
+        "zh": "令牌 with"
+      },
+      {
+        "en": "Tokens",
+        "zh": "令牌"
+      },
+      {
+        "en": "Tokens read from cache",
+        "zh": "令牌 read from cache"
+      },
+      {
+        "en": "Tokens written to cache",
+        "zh": "令牌 written to cache"
+      },
+      {
+        "en": "Tool",
+        "zh": "工具"
+      },
+      {
+        "en": "Tool Access",
+        "zh": "工具 Access"
+      },
+      {
+        "en": "Tool Calls",
+        "zh": "工具 Calls"
+      },
+      {
+        "en": "Tool Output",
+        "zh": "工具 Output"
+      },
+      {
+        "en": "Tool Result",
+        "zh": "工具 Result"
+      },
+      {
+        "en": "Tools",
+        "zh": "工具"
+      },
+      {
+        "en": "Top Agents",
+        "zh": "[待翻译] Top Agents"
+      },
+      {
+        "en": "Top Channels",
+        "zh": "[待翻译] Top Channels"
+      },
+      {
+        "en": "Top Models",
+        "zh": "[待翻译] Top Models"
+      },
+      {
+        "en": "Top Providers",
+        "zh": "[待翻译] Top Providers"
+      },
+      {
+        "en": "Top Tools",
+        "zh": "Top 工具"
+      },
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      },
+      {
+        "en": "TrustedHTML",
+        "zh": "[待翻译] TrustedHTML"
+      },
+      {
+        "en": "TrustedScriptURL",
+        "zh": "[待翻译] TrustedScriptURL"
+      },
+      {
+        "en": "TrustedTypes policy",
+        "zh": "[待翻译] TrustedTypes policy"
+      },
+      {
+        "en": "Tue",
+        "zh": "[待翻译] Tue"
+      },
+      {
+        "en": "Type",
+        "zh": "类型"
+      }
+    ],
+    "u": [
+      {
+        "en": "UI",
+        "zh": "[待翻译] UI"
+      },
+      {
+        "en": "UTC",
+        "zh": "[待翻译] UTC"
+      },
+      {
+        "en": "Unavailable",
+        "zh": "[待翻译] Unavailable"
+      },
+      {
+        "en": "Unpin filters",
+        "zh": "[待翻译] Unpin filters"
+      },
+      {
+        "en": "Unsaved changes",
+        "zh": "[待翻译] Unsaved changes"
+      },
+      {
+        "en": "Update",
+        "zh": "[待翻译] Update"
+      },
+      {
+        "en": "Updates",
+        "zh": "[待翻译] Updates"
+      },
+      {
+        "en": "Usage",
+        "zh": "[待翻译] Usage"
+      },
+      {
+        "en": "Usage Over",
+        "zh": "[待翻译] Usage Over"
+      },
+      {
+        "en": "Usage Over Time",
+        "zh": "[待翻译] Usage Over Time"
+      },
+      {
+        "en": "Usage Overview",
+        "zh": "[待翻译] Usage Overview"
+      },
+      {
+        "en": "Use All",
+        "zh": "[待翻译] Use All"
+      },
+      {
+        "en": "Use Channels",
+        "zh": "[待翻译] Use Channels"
+      },
+      {
+        "en": "Use Raw",
+        "zh": "[待翻译] Use Raw"
+      },
+      {
+        "en": "User",
+        "zh": "用户"
+      },
+      {
+        "en": "User interface preferences",
+        "zh": "用户 interface 偏好设置"
+      },
+      {
+        "en": "Username",
+        "zh": "[待翻译] Username"
+      }
+    ],
+    "v": [
+      {
+        "en": "Value passed to",
+        "zh": "[待翻译] Value passed to"
+      },
+      {
+        "en": "View",
+        "zh": "[待翻译] View"
+      },
+      {
+        "en": "View Raw",
+        "zh": "[待翻译] View Raw"
+      },
+      {
+        "en": "Voice and speech settings",
+        "zh": "Voice and speech 设置"
+      }
+    ],
+    "w": [
+      {
+        "en": "Web",
+        "zh": "[待翻译] Web"
+      },
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      },
+      {
+        "en": "WebChat",
+        "zh": "[待翻译] WebChat"
+      },
+      {
+        "en": "Webhooks and event hooks",
+        "zh": "Webhooks and 事件 hooks"
+      },
+      {
+        "en": "Website",
+        "zh": "[待翻译] Website"
+      },
+      {
+        "en": "Wed",
+        "zh": "[待翻译] Wed"
+      },
+      {
+        "en": "WhatsApp",
+        "zh": "[待翻译] WhatsApp"
+      },
+      {
+        "en": "WhatsApp Login",
+        "zh": "[待翻译] WhatsApp Login"
+      },
+      {
+        "en": "WhatsApp QR",
+        "zh": "[待翻译] WhatsApp QR"
+      },
+      {
+        "en": "Workspace Skills",
+        "zh": "Workspace 技能"
+      },
+      {
+        "en": "Workspace and scheduling targets.",
+        "zh": "[待翻译] Workspace and scheduling targets."
+      },
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      },
+      {
+        "en": "Write",
+        "zh": "[待翻译] Write"
+      }
+    ],
+    "y": [
+      {
+        "en": "Yes",
+        "zh": "[待翻译] Yes"
+      },
+      {
+        "en": "You",
+        "zh": "[待翻译] You"
+      },
+      {
+        "en": "Your full display name",
+        "zh": "Your full display 名称"
+      },
+      {
+        "en": "Your personal website",
+        "zh": "[待翻译] Your personal website"
+      }
+    ],
+    "z": [
+      {
+        "en": "Zalo",
+        "zh": "[待翻译] Zalo"
+      },
+      {
+        "en": "Zalo Personal",
+        "zh": "[待翻译] Zalo Personal"
+      }
+    ]
+  },
+  "wordIndex": {
+    "brief": [
+      {
+        "en": "A brief bio or description",
+        "zh": "A brief bio or 描述"
+      }
+    ],
+    "bio": [
+      {
+        "en": "A brief bio or description",
+        "zh": "A brief bio or 描述"
+      },
+      {
+        "en": "Bio",
+        "zh": "[待翻译] Bio"
+      }
+    ],
+    "description": [
+      {
+        "en": "A brief bio or description",
+        "zh": "A brief bio or 描述"
+      },
+      {
+        "en": "Description",
+        "zh": "描述"
+      }
+    ],
+    "model": [
+      {
+        "en": "AI model configurations and providers",
+        "zh": "AI 模型 configurations and providers"
+      },
+      {
+        "en": "Model",
+        "zh": "模型"
+      },
+      {
+        "en": "Model Mix",
+        "zh": "模型 Mix"
+      },
+      {
+        "en": "Model Selection",
+        "zh": "模型 Selection"
+      },
+      {
+        "en": "No model data",
+        "zh": "No 模型 data"
+      },
+      {
+        "en": "Primary Model",
+        "zh": "Primary 模型"
+      },
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      }
+    ],
+    "configurations": [
+      {
+        "en": "AI model configurations and providers",
+        "zh": "AI 模型 configurations and providers"
+      },
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      }
+    ],
+    "and": [
+      {
+        "en": "AI model configurations and providers",
+        "zh": "AI 模型 configurations and providers"
+      },
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      },
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      },
+      {
+        "en": "Agent workspace and routing.",
+        "zh": "代理 workspace and routing."
+      },
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      },
+      {
+        "en": "Broadcast and notification settings",
+        "zh": "Broadcast and notification 设置"
+      },
+      {
+        "en": "Canvas rendering and display",
+        "zh": "[待翻译] Canvas rendering and display"
+      },
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      },
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      },
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      },
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      },
+      {
+        "en": "Key bindings and shortcuts",
+        "zh": "密钥 bindings and shortcuts"
+      },
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      },
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      },
+      {
+        "en": "Manage channels and settings.",
+        "zh": "Manage channels and 设置."
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      },
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      },
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      },
+      {
+        "en": "Plugin management and extensions",
+        "zh": "插件 management and extensions"
+      },
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      },
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      },
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      },
+      {
+        "en": "Scheduled tasks and automation",
+        "zh": "[待翻译] Scheduled tasks and automation"
+      },
+      {
+        "en": "Service discovery and networking",
+        "zh": "[待翻译] Service discovery and networking"
+      },
+      {
+        "en": "Session management and persistence",
+        "zh": "会话 management and persistence"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      },
+      {
+        "en": "Skill packs and capabilities",
+        "zh": "技能 packs and capabilities"
+      },
+      {
+        "en": "Voice and speech settings",
+        "zh": "Voice and speech 设置"
+      },
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      },
+      {
+        "en": "Webhooks and event hooks",
+        "zh": "Webhooks and 事件 hooks"
+      },
+      {
+        "en": "Workspace and scheduling targets.",
+        "zh": "[待翻译] Workspace and scheduling targets."
+      },
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      }
+    ],
+    "providers": [
+      {
+        "en": "AI model configurations and providers",
+        "zh": "AI 模型 configurations and providers"
+      },
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Top Providers",
+        "zh": "[待翻译] Top Providers"
+      }
+    ],
+    "api": [
+      {
+        "en": "API key saved",
+        "zh": "API 密钥 saved"
+      },
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      },
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      }
+    ],
+    "key": [
+      {
+        "en": "API key saved",
+        "zh": "API 密钥 saved"
+      },
+      {
+        "en": "Key",
+        "zh": "密钥"
+      },
+      {
+        "en": "Key bindings and shortcuts",
+        "zh": "密钥 bindings and shortcuts"
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      },
+      {
+        "en": "Public Key",
+        "zh": "Public 密钥"
+      }
+    ],
+    "saved": [
+      {
+        "en": "API key saved",
+        "zh": "API 密钥 saved"
+      }
+    ],
+    "keys": [
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      }
+    ],
+    "authentication": [
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      },
+      {
+        "en": "Authentication",
+        "zh": "认证"
+      }
+    ],
+    "profiles": [
+      {
+        "en": "API keys and authentication profiles",
+        "zh": "API keys and 认证 profiles"
+      }
+    ],
+    "active": [
+      {
+        "en": "Active",
+        "zh": "[待翻译] Active"
+      },
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      },
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "add": [
+      {
+        "en": "Add",
+        "zh": "添加"
+      },
+      {
+        "en": "Add Entry",
+        "zh": "添加 Entry"
+      },
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      },
+      {
+        "en": "Add job",
+        "zh": "添加 job"
+      }
+    ],
+    "entry": [
+      {
+        "en": "Add Entry",
+        "zh": "添加 Entry"
+      },
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      },
+      {
+        "en": "Remove entry",
+        "zh": "移除 entry"
+      }
+    ],
+    "message": [
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      },
+      {
+        "en": "Agent message",
+        "zh": "代理 消息"
+      },
+      {
+        "en": "Agent message required.",
+        "zh": "代理 消息 required."
+      },
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      },
+      {
+        "en": "Base context per message",
+        "zh": "Base 上下文 per 消息"
+      },
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      },
+      {
+        "en": "Remove queued message",
+        "zh": "移除 queued 消息"
+      }
+    ],
+    "paste": [
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      }
+    ],
+    "more": [
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      }
+    ],
+    "images": [
+      {
+        "en": "Add a message or paste more images...",
+        "zh": "[待翻译] Add a message or paste more images..."
+      }
+    ],
+    "job": [
+      {
+        "en": "Add job",
+        "zh": "添加 job"
+      },
+      {
+        "en": "New Job",
+        "zh": "新建 Job"
+      }
+    ],
+    "advanced": [
+      {
+        "en": "Advanced",
+        "zh": "高级"
+      },
+      {
+        "en": "Hide Advanced",
+        "zh": "Hide 高级"
+      },
+      {
+        "en": "Show Advanced",
+        "zh": "Show 高级"
+      }
+    ],
+    "agent": [
+      {
+        "en": "Agent",
+        "zh": "代理"
+      },
+      {
+        "en": "Agent Context",
+        "zh": "代理 上下文"
+      },
+      {
+        "en": "Agent Cron",
+        "zh": "代理 Cron"
+      },
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      },
+      {
+        "en": "Agent message",
+        "zh": "代理 消息"
+      },
+      {
+        "en": "Agent message required.",
+        "zh": "代理 消息 required."
+      },
+      {
+        "en": "Agent workspace and routing.",
+        "zh": "代理 workspace and routing."
+      },
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      },
+      {
+        "en": "No agent data",
+        "zh": "No 代理 data"
+      },
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      }
+    ],
+    "context": [
+      {
+        "en": "Agent Context",
+        "zh": "代理 上下文"
+      },
+      {
+        "en": "Base context per message",
+        "zh": "Base 上下文 per 消息"
+      }
+    ],
+    "cron": [
+      {
+        "en": "Agent Cron",
+        "zh": "代理 Cron"
+      },
+      {
+        "en": "Cron",
+        "zh": "[待翻译] Cron"
+      },
+      {
+        "en": "Cron Jobs",
+        "zh": "[待翻译] Cron Jobs"
+      },
+      {
+        "en": "Cron expression required.",
+        "zh": "[待翻译] Cron expression required."
+      }
+    ],
+    "models": [
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      },
+      {
+        "en": "Models",
+        "zh": "[待翻译] Models"
+      },
+      {
+        "en": "Top Models",
+        "zh": "[待翻译] Top Models"
+      }
+    ],
+    "identities": [
+      {
+        "en": "Agent configurations, models, and identities",
+        "zh": "代理 configurations, models, and identities"
+      },
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      }
+    ],
+    "required": [
+      {
+        "en": "Agent message required.",
+        "zh": "代理 消息 required."
+      },
+      {
+        "en": "Cron expression required.",
+        "zh": "[待翻译] Cron expression required."
+      },
+      {
+        "en": "Name required.",
+        "zh": "名称 required."
+      },
+      {
+        "en": "System event text required.",
+        "zh": "系统 事件 text required."
+      }
+    ],
+    "workspace": [
+      {
+        "en": "Agent workspace and routing.",
+        "zh": "代理 workspace and routing."
+      },
+      {
+        "en": "Workspace Skills",
+        "zh": "Workspace 技能"
+      },
+      {
+        "en": "Workspace and scheduling targets.",
+        "zh": "[待翻译] Workspace and scheduling targets."
+      },
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      }
+    ],
+    "routing": [
+      {
+        "en": "Agent workspace and routing.",
+        "zh": "代理 workspace and routing."
+      },
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      }
+    ],
+    "agents": [
+      {
+        "en": "Agents",
+        "zh": "[待翻译] Agents"
+      },
+      {
+        "en": "List agents",
+        "zh": "[待翻译] List agents"
+      },
+      {
+        "en": "Top Agents",
+        "zh": "[待翻译] Top Agents"
+      }
+    ],
+    "all": [
+      {
+        "en": "All Settings",
+        "zh": "All 设置"
+      },
+      {
+        "en": "Clear All",
+        "zh": "清空 All"
+      },
+      {
+        "en": "Collapse All",
+        "zh": "[待翻译] Collapse All"
+      },
+      {
+        "en": "Disable All",
+        "zh": "[待翻译] Disable All"
+      },
+      {
+        "en": "Enable All",
+        "zh": "[待翻译] Enable All"
+      },
+      {
+        "en": "Expand All",
+        "zh": "[待翻译] Expand All"
+      },
+      {
+        "en": "Expand all",
+        "zh": "[待翻译] Expand all"
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      },
+      {
+        "en": "Select All",
+        "zh": "[待翻译] Select All"
+      },
+      {
+        "en": "Use All",
+        "zh": "[待翻译] Use All"
+      }
+    ],
+    "settings": [
+      {
+        "en": "All Settings",
+        "zh": "All 设置"
+      },
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      },
+      {
+        "en": "Broadcast and notification settings",
+        "zh": "Broadcast and notification 设置"
+      },
+      {
+        "en": "Browser automation settings",
+        "zh": "Browser automation 设置"
+      },
+      {
+        "en": "Manage channels and settings.",
+        "zh": "Manage channels and 设置."
+      },
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      },
+      {
+        "en": "No settings in this section",
+        "zh": "No 设置 in this section"
+      },
+      {
+        "en": "Search settings...",
+        "zh": "[待翻译] Search settings..."
+      },
+      {
+        "en": "Settings",
+        "zh": "设置"
+      },
+      {
+        "en": "Voice and speech settings",
+        "zh": "Voice and speech 设置"
+      },
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      }
+    ],
+    "allow": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      }
+    ],
+    "skill": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      },
+      {
+        "en": "Skill disabled",
+        "zh": "技能 disabled"
+      },
+      {
+        "en": "Skill enabled",
+        "zh": "技能 enabled"
+      },
+      {
+        "en": "Skill packs and capabilities",
+        "zh": "技能 packs and capabilities"
+      }
+    ],
+    "executables": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      }
+    ],
+    "listed": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      }
+    ],
+    "the": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      },
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      },
+      {
+        "en": "Distinct sessions in the range.",
+        "zh": "Distinct 会话 in the range."
+      },
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      },
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      },
+      {
+        "en": "Search the web",
+        "zh": "搜索 the web"
+      }
+    ],
+    "gateway": [
+      {
+        "en": "Allow skill executables listed by the Gateway.",
+        "zh": "Allow 技能 executables listed by the Gateway."
+      },
+      {
+        "en": "Change Gateway",
+        "zh": "[待翻译] Change Gateway"
+      },
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      },
+      {
+        "en": "Disconnected from gateway.",
+        "zh": "已断开 from gateway."
+      },
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      },
+      {
+        "en": "Gateway",
+        "zh": "[待翻译] Gateway"
+      },
+      {
+        "en": "Gateway Access",
+        "zh": "[待翻译] Gateway Access"
+      },
+      {
+        "en": "Gateway Dashboard",
+        "zh": "Gateway 仪表板"
+      },
+      {
+        "en": "Gateway Token",
+        "zh": "Gateway 令牌"
+      },
+      {
+        "en": "Gateway control",
+        "zh": "[待翻译] Gateway control"
+      },
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      },
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      },
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      },
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      }
+    ],
+    "allowlist": [
+      {
+        "en": "Allowlist",
+        "zh": "[待翻译] Allowlist"
+      }
+    ],
+    "always": [
+      {
+        "en": "Always",
+        "zh": "[待翻译] Always"
+      }
+    ],
+    "app": [
+      {
+        "en": "App Login",
+        "zh": "[待翻译] App Login"
+      },
+      {
+        "en": "App Web",
+        "zh": "[待翻译] App Web"
+      }
+    ],
+    "login": [
+      {
+        "en": "App Login",
+        "zh": "[待翻译] App Login"
+      },
+      {
+        "en": "WhatsApp Login",
+        "zh": "[待翻译] WhatsApp Login"
+      }
+    ],
+    "web": [
+      {
+        "en": "App Web",
+        "zh": "[待翻译] App Web"
+      },
+      {
+        "en": "Control web browser",
+        "zh": "[待翻译] Control web browser"
+      },
+      {
+        "en": "Fetch web content",
+        "zh": "[待翻译] Fetch web content"
+      },
+      {
+        "en": "Search the web",
+        "zh": "搜索 the web"
+      },
+      {
+        "en": "Web",
+        "zh": "[待翻译] Web"
+      },
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      }
+    ],
+    "applied": [
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      }
+    ],
+    "when": [
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      },
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      }
+    ],
+    "prompt": [
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      },
+      {
+        "en": "Default prompt policy.",
+        "zh": "[待翻译] Default prompt policy."
+      },
+      {
+        "en": "System Prompt",
+        "zh": "系统 Prompt"
+      }
+    ],
+    "unavailable": [
+      {
+        "en": "Applied when the UI prompt is unavailable.",
+        "zh": "[待翻译] Applied when the UI prompt is unavailable."
+      },
+      {
+        "en": "Unavailable",
+        "zh": "[待翻译] Unavailable"
+      }
+    ],
+    "apply": [
+      {
+        "en": "Apply",
+        "zh": "[待翻译] Apply"
+      }
+    ],
+    "ascending": [
+      {
+        "en": "Ascending",
+        "zh": "[待翻译] Ascending"
+      }
+    ],
+    "ask": [
+      {
+        "en": "Ask",
+        "zh": "[待翻译] Ask"
+      }
+    ],
+    "assistant": [
+      {
+        "en": "Assistant",
+        "zh": "助手"
+      },
+      {
+        "en": "Assistant output tokens",
+        "zh": "助手 output 令牌"
+      }
+    ],
+    "output": [
+      {
+        "en": "Assistant output tokens",
+        "zh": "助手 output 令牌"
+      },
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      },
+      {
+        "en": "Tool Output",
+        "zh": "工具 Output"
+      }
+    ],
+    "tokens": [
+      {
+        "en": "Assistant output tokens",
+        "zh": "助手 output 令牌"
+      },
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      },
+      {
+        "en": "Avg Tokens",
+        "zh": "Avg 令牌"
+      },
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      },
+      {
+        "en": "Tokens",
+        "zh": "令牌"
+      },
+      {
+        "en": "Tokens read from cache",
+        "zh": "令牌 read from cache"
+      },
+      {
+        "en": "Tokens written to cache",
+        "zh": "令牌 written to cache"
+      }
+    ],
+    "attach": [
+      {
+        "en": "Attach",
+        "zh": "[待翻译] Attach"
+      }
+    ],
+    "attached": [
+      {
+        "en": "Attached image",
+        "zh": "[待翻译] Attached image"
+      }
+    ],
+    "image": [
+      {
+        "en": "Attached image",
+        "zh": "[待翻译] Attached image"
+      },
+      {
+        "en": "HTTPS URL to a banner image",
+        "zh": "[待翻译] HTTPS URL to a banner image"
+      },
+      {
+        "en": "Image understanding",
+        "zh": "[待翻译] Image understanding"
+      }
+    ],
+    "attachment": [
+      {
+        "en": "Attachment preview",
+        "zh": "[待翻译] Attachment preview"
+      },
+      {
+        "en": "Remove attachment",
+        "zh": "移除 attachment"
+      }
+    ],
+    "preview": [
+      {
+        "en": "Attachment preview",
+        "zh": "[待翻译] Attachment preview"
+      },
+      {
+        "en": "Profile picture preview",
+        "zh": "[待翻译] Profile picture preview"
+      }
+    ],
+    "audio": [
+      {
+        "en": "Audio",
+        "zh": "[待翻译] Audio"
+      }
+    ],
+    "autoupdate": [
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      }
+    ],
+    "release": [
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      }
+    ],
+    "channel": [
+      {
+        "en": "Auto-update settings and release channel",
+        "zh": "Auto-update 设置 and release 频道"
+      },
+      {
+        "en": "Channel",
+        "zh": "频道"
+      },
+      {
+        "en": "No channel data",
+        "zh": "No 频道 data"
+      }
+    ],
+    "automation": [
+      {
+        "en": "Automation",
+        "zh": "[待翻译] Automation"
+      },
+      {
+        "en": "Browser automation settings",
+        "zh": "Browser automation 设置"
+      },
+      {
+        "en": "Scheduled tasks and automation",
+        "zh": "[待翻译] Scheduled tasks and automation"
+      }
+    ],
+    "avatar": [
+      {
+        "en": "Avatar URL",
+        "zh": "[待翻译] Avatar URL"
+      }
+    ],
+    "url": [
+      {
+        "en": "Avatar URL",
+        "zh": "[待翻译] Avatar URL"
+      },
+      {
+        "en": "Banner URL",
+        "zh": "[待翻译] Banner URL"
+      },
+      {
+        "en": "HTTPS URL to a banner image",
+        "zh": "[待翻译] HTTPS URL to a banner image"
+      },
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      }
+    ],
+    "average": [
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      }
+    ],
+    "cost": [
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Avg Cost",
+        "zh": "[待翻译] Avg Cost"
+      },
+      {
+        "en": "Cost",
+        "zh": "[待翻译] Cost"
+      }
+    ],
+    "per": [
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      },
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      },
+      {
+        "en": "Base context per message",
+        "zh": "Base 上下文 per 消息"
+      },
+      {
+        "en": "Per Turn",
+        "zh": "[待翻译] Per Turn"
+      },
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "report": [
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      }
+    ],
+    "costs": [
+      {
+        "en": "Average cost per message when providers report costs.",
+        "zh": "Average cost per 消息 when providers report costs."
+      }
+    ],
+    "this": [
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      },
+      {
+        "en": "No settings in this section",
+        "zh": "No 设置 in this section"
+      },
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      }
+    ],
+    "range": [
+      {
+        "en": "Average tokens per message in this range.",
+        "zh": "Average 令牌 per 消息 in this range."
+      },
+      {
+        "en": "Distinct sessions in the range.",
+        "zh": "Distinct 会话 in the range."
+      }
+    ],
+    "avg": [
+      {
+        "en": "Avg Cost",
+        "zh": "[待翻译] Avg Cost"
+      },
+      {
+        "en": "Avg Tokens",
+        "zh": "Avg 令牌"
+      }
+    ],
+    "body": [
+      {
+        "en": "BODY",
+        "zh": "[待翻译] BODY"
+      }
+    ],
+    "banner": [
+      {
+        "en": "Banner URL",
+        "zh": "[待翻译] Banner URL"
+      },
+      {
+        "en": "HTTPS URL to a banner image",
+        "zh": "[待翻译] HTTPS URL to a banner image"
+      }
+    ],
+    "base": [
+      {
+        "en": "Base context per message",
+        "zh": "Base 上下文 per 消息"
+      }
+    ],
+    "bash": [
+      {
+        "en": "Bash",
+        "zh": "[待翻译] Bash"
+      }
+    ],
+    "bindings": [
+      {
+        "en": "Bindings",
+        "zh": "[待翻译] Bindings"
+      },
+      {
+        "en": "Key bindings and shortcuts",
+        "zh": "密钥 bindings and shortcuts"
+      }
+    ],
+    "bluebubbles": [
+      {
+        "en": "BlueBubbles",
+        "zh": "[待翻译] BlueBubbles"
+      }
+    ],
+    "broadcast": [
+      {
+        "en": "Broadcast",
+        "zh": "[待翻译] Broadcast"
+      },
+      {
+        "en": "Broadcast and notification settings",
+        "zh": "Broadcast and notification 设置"
+      }
+    ],
+    "notification": [
+      {
+        "en": "Broadcast and notification settings",
+        "zh": "Broadcast and notification 设置"
+      }
+    ],
+    "browser": [
+      {
+        "en": "Browser",
+        "zh": "[待翻译] Browser"
+      },
+      {
+        "en": "Browser automation settings",
+        "zh": "Browser automation 设置"
+      },
+      {
+        "en": "Control web browser",
+        "zh": "[待翻译] Control web browser"
+      }
+    ],
+    "builtin": [
+      {
+        "en": "Built-in Skills",
+        "zh": "Built-in 技能"
+      }
+    ],
+    "skills": [
+      {
+        "en": "Built-in Skills",
+        "zh": "Built-in 技能"
+      },
+      {
+        "en": "Extra Skills",
+        "zh": "Extra 技能"
+      },
+      {
+        "en": "Installed Skills",
+        "zh": "Installed 技能"
+      },
+      {
+        "en": "Other Skills",
+        "zh": "Other 技能"
+      },
+      {
+        "en": "Search skills",
+        "zh": "搜索 技能"
+      },
+      {
+        "en": "Skills",
+        "zh": "技能"
+      },
+      {
+        "en": "Skills Filter",
+        "zh": "技能 筛选"
+      },
+      {
+        "en": "Workspace Skills",
+        "zh": "Workspace 技能"
+      }
+    ],
+    "type": [
+      {
+        "en": "By Type",
+        "zh": "By 类型"
+      },
+      {
+        "en": "Type",
+        "zh": "类型"
+      }
+    ],
+    "cwd": [
+      {
+        "en": "CWD",
+        "zh": "[待翻译] CWD"
+      }
+    ],
+    "cache": [
+      {
+        "en": "Cache Hit",
+        "zh": "[待翻译] Cache Hit"
+      },
+      {
+        "en": "Cache Read",
+        "zh": "[待翻译] Cache Read"
+      },
+      {
+        "en": "Cache Write",
+        "zh": "[待翻译] Cache Write"
+      },
+      {
+        "en": "Tokens read from cache",
+        "zh": "令牌 read from cache"
+      },
+      {
+        "en": "Tokens written to cache",
+        "zh": "令牌 written to cache"
+      }
+    ],
+    "hit": [
+      {
+        "en": "Cache Hit",
+        "zh": "[待翻译] Cache Hit"
+      }
+    ],
+    "read": [
+      {
+        "en": "Cache Read",
+        "zh": "[待翻译] Cache Read"
+      },
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      },
+      {
+        "en": "Read",
+        "zh": "[待翻译] Read"
+      },
+      {
+        "en": "Read file contents",
+        "zh": "[待翻译] Read file contents"
+      },
+      {
+        "en": "Read memory files",
+        "zh": "Read 记忆 files"
+      },
+      {
+        "en": "Tokens read from cache",
+        "zh": "令牌 read from cache"
+      }
+    ],
+    "write": [
+      {
+        "en": "Cache Write",
+        "zh": "[待翻译] Cache Write"
+      },
+      {
+        "en": "Write",
+        "zh": "[待翻译] Write"
+      }
+    ],
+    "cancel": [
+      {
+        "en": "Cancel",
+        "zh": "取消"
+      }
+    ],
+    "canvas": [
+      {
+        "en": "Canvas",
+        "zh": "[待翻译] Canvas"
+      },
+      {
+        "en": "Canvas Host",
+        "zh": "[待翻译] Canvas Host"
+      },
+      {
+        "en": "Canvas rendering and display",
+        "zh": "[待翻译] Canvas rendering and display"
+      }
+    ],
+    "host": [
+      {
+        "en": "Canvas Host",
+        "zh": "[待翻译] Canvas Host"
+      },
+      {
+        "en": "Host",
+        "zh": "[待翻译] Host"
+      }
+    ],
+    "rendering": [
+      {
+        "en": "Canvas rendering and display",
+        "zh": "[待翻译] Canvas rendering and display"
+      }
+    ],
+    "display": [
+      {
+        "en": "Canvas rendering and display",
+        "zh": "[待翻译] Canvas rendering and display"
+      },
+      {
+        "en": "Display Name",
+        "zh": "Display 名称"
+      },
+      {
+        "en": "Your full display name",
+        "zh": "Your full display 名称"
+      }
+    ],
+    "change": [
+      {
+        "en": "Change Gateway",
+        "zh": "[待翻译] Change Gateway"
+      }
+    ],
+    "channels": [
+      {
+        "en": "Channels",
+        "zh": "[待翻译] Channels"
+      },
+      {
+        "en": "Last Channels",
+        "zh": "[待翻译] Last Channels"
+      },
+      {
+        "en": "Manage channels and settings.",
+        "zh": "Manage channels and 设置."
+      },
+      {
+        "en": "Top Channels",
+        "zh": "[待翻译] Top Channels"
+      },
+      {
+        "en": "Use Channels",
+        "zh": "[待翻译] Use Channels"
+      }
+    ],
+    "chat": [
+      {
+        "en": "Chat",
+        "zh": "[待翻译] Chat"
+      },
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      },
+      {
+        "en": "Google Chat",
+        "zh": "[待翻译] Google Chat"
+      },
+      {
+        "en": "Refresh chat data",
+        "zh": "刷新 chat data"
+      }
+    ],
+    "clear": [
+      {
+        "en": "Clear",
+        "zh": "清空"
+      },
+      {
+        "en": "Clear All",
+        "zh": "清空 All"
+      },
+      {
+        "en": "Clear Selection",
+        "zh": "清空 Selection"
+      }
+    ],
+    "selection": [
+      {
+        "en": "Clear Selection",
+        "zh": "清空 Selection"
+      },
+      {
+        "en": "Model Selection",
+        "zh": "模型 Selection"
+      }
+    ],
+    "click": [
+      {
+        "en": "Click Connect",
+        "zh": "[待翻译] Click Connect"
+      }
+    ],
+    "connect": [
+      {
+        "en": "Click Connect",
+        "zh": "[待翻译] Click Connect"
+      }
+    ],
+    "close": [
+      {
+        "en": "Close",
+        "zh": "关闭"
+      },
+      {
+        "en": "Close session details",
+        "zh": "关闭 会话 details"
+      },
+      {
+        "en": "Close sidebar",
+        "zh": "关闭 sidebar"
+      }
+    ],
+    "session": [
+      {
+        "en": "Close session details",
+        "zh": "关闭 会话 details"
+      },
+      {
+        "en": "Copy session name",
+        "zh": "复制 会话 名称"
+      },
+      {
+        "en": "Default Session",
+        "zh": "Default 会话"
+      },
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      },
+      {
+        "en": "New session",
+        "zh": "新建 会话"
+      },
+      {
+        "en": "Send to session",
+        "zh": "发送 to 会话"
+      },
+      {
+        "en": "Session",
+        "zh": "会话"
+      },
+      {
+        "en": "Session Detail",
+        "zh": "会话 Detail"
+      },
+      {
+        "en": "Session history",
+        "zh": "会话 历史"
+      },
+      {
+        "en": "Session management and persistence",
+        "zh": "会话 management and persistence"
+      },
+      {
+        "en": "Session status",
+        "zh": "会话 状态"
+      }
+    ],
+    "details": [
+      {
+        "en": "Close session details",
+        "zh": "关闭 会话 details"
+      }
+    ],
+    "sidebar": [
+      {
+        "en": "Close sidebar",
+        "zh": "关闭 sidebar"
+      },
+      {
+        "en": "Collapse sidebar",
+        "zh": "[待翻译] Collapse sidebar"
+      },
+      {
+        "en": "Expand sidebar",
+        "zh": "[待翻译] Expand sidebar"
+      }
+    ],
+    "coding": [
+      {
+        "en": "Coding",
+        "zh": "[待翻译] Coding"
+      }
+    ],
+    "collapse": [
+      {
+        "en": "Collapse",
+        "zh": "[待翻译] Collapse"
+      },
+      {
+        "en": "Collapse All",
+        "zh": "[待翻译] Collapse All"
+      },
+      {
+        "en": "Collapse sidebar",
+        "zh": "[待翻译] Collapse sidebar"
+      }
+    ],
+    "commands": [
+      {
+        "en": "Commands",
+        "zh": "[待翻译] Commands"
+      },
+      {
+        "en": "Custom slash commands",
+        "zh": "[待翻译] Custom slash commands"
+      },
+      {
+        "en": "Run shell commands",
+        "zh": "[待翻译] Run shell commands"
+      }
+    ],
+    "config": [
+      {
+        "en": "Config",
+        "zh": "[待翻译] Config"
+      },
+      {
+        "en": "Load config",
+        "zh": "[待翻译] Load config"
+      },
+      {
+        "en": "Reload Config",
+        "zh": "[待翻译] Reload Config"
+      }
+    ],
+    "connected": [
+      {
+        "en": "Connected",
+        "zh": "已连接"
+      },
+      {
+        "en": "Connected Instances",
+        "zh": "已连接 Instances"
+      },
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      }
+    ],
+    "instances": [
+      {
+        "en": "Connected Instances",
+        "zh": "已连接 Instances"
+      },
+      {
+        "en": "Instances",
+        "zh": "[待翻译] Instances"
+      },
+      {
+        "en": "No instances yet.",
+        "zh": "[待翻译] No instances yet."
+      }
+    ],
+    "contenttype": [
+      {
+        "en": "Content-Type",
+        "zh": "Content-类型"
+      }
+    ],
+    "control": [
+      {
+        "en": "Control",
+        "zh": "[待翻译] Control"
+      },
+      {
+        "en": "Control canvases",
+        "zh": "[待翻译] Control canvases"
+      },
+      {
+        "en": "Control web browser",
+        "zh": "[待翻译] Control web browser"
+      },
+      {
+        "en": "Gateway control",
+        "zh": "[待翻译] Gateway control"
+      }
+    ],
+    "canvases": [
+      {
+        "en": "Control canvases",
+        "zh": "[待翻译] Control canvases"
+      }
+    ],
+    "copied": [
+      {
+        "en": "Copied",
+        "zh": "[待翻译] Copied"
+      }
+    ],
+    "copy": [
+      {
+        "en": "Copy",
+        "zh": "复制"
+      },
+      {
+        "en": "Copy as markdown",
+        "zh": "复制 as markdown"
+      },
+      {
+        "en": "Copy failed",
+        "zh": "复制 failed"
+      },
+      {
+        "en": "Copy session name",
+        "zh": "复制 会话 名称"
+      }
+    ],
+    "markdown": [
+      {
+        "en": "Copy as markdown",
+        "zh": "复制 as markdown"
+      }
+    ],
+    "failed": [
+      {
+        "en": "Copy failed",
+        "zh": "复制 failed"
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      }
+    ],
+    "name": [
+      {
+        "en": "Copy session name",
+        "zh": "复制 会话 名称"
+      },
+      {
+        "en": "Display Name",
+        "zh": "Display 名称"
+      },
+      {
+        "en": "Identity Name",
+        "zh": "Identity 名称"
+      },
+      {
+        "en": "Name",
+        "zh": "名称"
+      },
+      {
+        "en": "Name required.",
+        "zh": "名称 required."
+      },
+      {
+        "en": "Your full display name",
+        "zh": "Your full display 名称"
+      }
+    ],
+    "core": [
+      {
+        "en": "Core Files",
+        "zh": "[待翻译] Core Files"
+      }
+    ],
+    "files": [
+      {
+        "en": "Core Files",
+        "zh": "[待翻译] Core Files"
+      },
+      {
+        "en": "Create or overwrite files",
+        "zh": "创建 or overwrite files"
+      },
+      {
+        "en": "Files",
+        "zh": "[待翻译] Files"
+      },
+      {
+        "en": "Read memory files",
+        "zh": "Read 记忆 files"
+      }
+    ],
+    "create": [
+      {
+        "en": "Create",
+        "zh": "创建"
+      },
+      {
+        "en": "Create or overwrite files",
+        "zh": "创建 or overwrite files"
+      }
+    ],
+    "overwrite": [
+      {
+        "en": "Create or overwrite files",
+        "zh": "创建 or overwrite files"
+      }
+    ],
+    "jobs": [
+      {
+        "en": "Cron Jobs",
+        "zh": "[待翻译] Cron Jobs"
+      }
+    ],
+    "expression": [
+      {
+        "en": "Cron expression required.",
+        "zh": "[待翻译] Cron expression required."
+      }
+    ],
+    "custom": [
+      {
+        "en": "Custom slash commands",
+        "zh": "[待翻译] Custom slash commands"
+      }
+    ],
+    "slash": [
+      {
+        "en": "Custom slash commands",
+        "zh": "[待翻译] Custom slash commands"
+      }
+    ],
+    "daily": [
+      {
+        "en": "Daily Usage",
+        "zh": "[待翻译] Daily Usage"
+      }
+    ],
+    "usage": [
+      {
+        "en": "Daily Usage",
+        "zh": "[待翻译] Daily Usage"
+      },
+      {
+        "en": "Token Usage",
+        "zh": "令牌 Usage"
+      },
+      {
+        "en": "Usage",
+        "zh": "[待翻译] Usage"
+      },
+      {
+        "en": "Usage Over",
+        "zh": "[待翻译] Usage Over"
+      },
+      {
+        "en": "Usage Over Time",
+        "zh": "[待翻译] Usage Over Time"
+      },
+      {
+        "en": "Usage Overview",
+        "zh": "[待翻译] Usage Overview"
+      }
+    ],
+    "dark": [
+      {
+        "en": "Dark",
+        "zh": "[待翻译] Dark"
+      },
+      {
+        "en": "Dark theme",
+        "zh": "[待翻译] Dark theme"
+      }
+    ],
+    "theme": [
+      {
+        "en": "Dark theme",
+        "zh": "[待翻译] Dark theme"
+      },
+      {
+        "en": "Light theme",
+        "zh": "[待翻译] Light theme"
+      },
+      {
+        "en": "System theme",
+        "zh": "系统 theme"
+      },
+      {
+        "en": "Theme",
+        "zh": "[待翻译] Theme"
+      }
+    ],
+    "dashboard": [
+      {
+        "en": "Dashboard",
+        "zh": "仪表板"
+      },
+      {
+        "en": "Gateway Dashboard",
+        "zh": "Gateway 仪表板"
+      }
+    ],
+    "debug": [
+      {
+        "en": "Debug",
+        "zh": "调试"
+      }
+    ],
+    "default": [
+      {
+        "en": "Default Session",
+        "zh": "Default 会话"
+      },
+      {
+        "en": "Default prompt policy.",
+        "zh": "[待翻译] Default prompt policy."
+      },
+      {
+        "en": "Default security mode.",
+        "zh": "Default 安全 mode."
+      },
+      {
+        "en": "Inherit default",
+        "zh": "[待翻译] Inherit default"
+      },
+      {
+        "en": "Reset to default",
+        "zh": "重置 to default"
+      }
+    ],
+    "policy": [
+      {
+        "en": "Default prompt policy.",
+        "zh": "[待翻译] Default prompt policy."
+      },
+      {
+        "en": "TrustedTypes policy",
+        "zh": "[待翻译] TrustedTypes policy"
+      }
+    ],
+    "security": [
+      {
+        "en": "Default security mode.",
+        "zh": "Default 安全 mode."
+      },
+      {
+        "en": "Security",
+        "zh": "安全"
+      }
+    ],
+    "mode": [
+      {
+        "en": "Default security mode.",
+        "zh": "Default 安全 mode."
+      },
+      {
+        "en": "Exit focus mode",
+        "zh": "[待翻译] Exit focus mode"
+      }
+    ],
+    "delete": [
+      {
+        "en": "Delete",
+        "zh": "删除"
+      }
+    ],
+    "deny": [
+      {
+        "en": "Deny",
+        "zh": "[待翻译] Deny"
+      }
+    ],
+    "descending": [
+      {
+        "en": "Descending",
+        "zh": "[待翻译] Descending"
+      }
+    ],
+    "direct": [
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      }
+    ],
+    "for": [
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      }
+    ],
+    "quick": [
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      },
+      {
+        "en": "Quick Presets",
+        "zh": "[待翻译] Quick Presets"
+      }
+    ],
+    "interventions": [
+      {
+        "en": "Direct gateway chat session for quick interventions.",
+        "zh": "Direct gateway chat 会话 for quick interventions."
+      }
+    ],
+    "disable": [
+      {
+        "en": "Disable",
+        "zh": "[待翻译] Disable"
+      },
+      {
+        "en": "Disable All",
+        "zh": "[待翻译] Disable All"
+      }
+    ],
+    "disabled": [
+      {
+        "en": "Disabled",
+        "zh": "[待翻译] Disabled"
+      },
+      {
+        "en": "Disabled during onboarding",
+        "zh": "[待翻译] Disabled during onboarding"
+      },
+      {
+        "en": "Skill disabled",
+        "zh": "技能 disabled"
+      }
+    ],
+    "during": [
+      {
+        "en": "Disabled during onboarding",
+        "zh": "[待翻译] Disabled during onboarding"
+      }
+    ],
+    "onboarding": [
+      {
+        "en": "Disabled during onboarding",
+        "zh": "[待翻译] Disabled during onboarding"
+      }
+    ],
+    "disconnected": [
+      {
+        "en": "Disconnected",
+        "zh": "已断开"
+      },
+      {
+        "en": "Disconnected from gateway.",
+        "zh": "已断开 from gateway."
+      }
+    ],
+    "from": [
+      {
+        "en": "Disconnected from gateway.",
+        "zh": "已断开 from gateway."
+      },
+      {
+        "en": "Import from Relays",
+        "zh": "[待翻译] Import from Relays"
+      },
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      },
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Tokens read from cache",
+        "zh": "令牌 read from cache"
+      }
+    ],
+    "discord": [
+      {
+        "en": "Discord",
+        "zh": "[待翻译] Discord"
+      }
+    ],
+    "discovery": [
+      {
+        "en": "Discovery",
+        "zh": "[待翻译] Discovery"
+      },
+      {
+        "en": "Service discovery and networking",
+        "zh": "[待翻译] Service discovery and networking"
+      }
+    ],
+    "distinct": [
+      {
+        "en": "Distinct sessions in the range.",
+        "zh": "Distinct 会话 in the range."
+      }
+    ],
+    "sessions": [
+      {
+        "en": "Distinct sessions in the range.",
+        "zh": "Distinct 会话 in the range."
+      },
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      },
+      {
+        "en": "List sessions",
+        "zh": "List 会话"
+      },
+      {
+        "en": "Sessions",
+        "zh": "会话"
+      },
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "edit": [
+      {
+        "en": "Edit",
+        "zh": "编辑"
+      },
+      {
+        "en": "Edit Profile",
+        "zh": "编辑 Profile"
+      }
+    ],
+    "profile": [
+      {
+        "en": "Edit Profile",
+        "zh": "编辑 Profile"
+      },
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      },
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      },
+      {
+        "en": "Profile picture",
+        "zh": "[待翻译] Profile picture"
+      },
+      {
+        "en": "Profile picture preview",
+        "zh": "[待翻译] Profile picture preview"
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      },
+      {
+        "en": "Profile published to relays.",
+        "zh": "[待翻译] Profile published to relays."
+      }
+    ],
+    "empty": [
+      {
+        "en": "Empty State",
+        "zh": "[待翻译] Empty State"
+      }
+    ],
+    "state": [
+      {
+        "en": "Empty State",
+        "zh": "[待翻译] Empty State"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      }
+    ],
+    "enable": [
+      {
+        "en": "Enable",
+        "zh": "[待翻译] Enable"
+      },
+      {
+        "en": "Enable All",
+        "zh": "[待翻译] Enable All"
+      }
+    ],
+    "enabled": [
+      {
+        "en": "Enabled",
+        "zh": "[待翻译] Enabled"
+      },
+      {
+        "en": "Skill enabled",
+        "zh": "技能 enabled"
+      }
+    ],
+    "end": [
+      {
+        "en": "End Date",
+        "zh": "[待翻译] End Date"
+      }
+    ],
+    "date": [
+      {
+        "en": "End Date",
+        "zh": "[待翻译] End Date"
+      },
+      {
+        "en": "Start Date",
+        "zh": "[待翻译] Start Date"
+      }
+    ],
+    "enter": [
+      {
+        "en": "Enter",
+        "zh": "[待翻译] Enter"
+      }
+    ],
+    "environment": [
+      {
+        "en": "Environment",
+        "zh": "[待翻译] Environment"
+      },
+      {
+        "en": "Environment Variables",
+        "zh": "[待翻译] Environment Variables"
+      },
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      }
+    ],
+    "variables": [
+      {
+        "en": "Environment Variables",
+        "zh": "[待翻译] Environment Variables"
+      },
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      }
+    ],
+    "passed": [
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      },
+      {
+        "en": "Value passed to",
+        "zh": "[待翻译] Value passed to"
+      }
+    ],
+    "process": [
+      {
+        "en": "Environment variables passed to the gateway process",
+        "zh": "[待翻译] Environment variables passed to the gateway process"
+      },
+      {
+        "en": "Process",
+        "zh": "[待翻译] Process"
+      }
+    ],
+    "error": [
+      {
+        "en": "Error",
+        "zh": "错误"
+      },
+      {
+        "en": "Error Rate",
+        "zh": "错误 Rate"
+      },
+      {
+        "en": "No error data",
+        "zh": "No 错误 data"
+      },
+      {
+        "en": "Peak Error",
+        "zh": "Peak 错误"
+      },
+      {
+        "en": "Peak Error Days",
+        "zh": "Peak 错误 Days"
+      },
+      {
+        "en": "Peak Error Hours",
+        "zh": "Peak 错误 Hours"
+      }
+    ],
+    "rate": [
+      {
+        "en": "Error Rate",
+        "zh": "错误 Rate"
+      }
+    ],
+    "event": [
+      {
+        "en": "Event Log",
+        "zh": "事件 Log"
+      },
+      {
+        "en": "System event text required.",
+        "zh": "系统 事件 text required."
+      },
+      {
+        "en": "Webhooks and event hooks",
+        "zh": "Webhooks and 事件 hooks"
+      }
+    ],
+    "log": [
+      {
+        "en": "Event Log",
+        "zh": "事件 Log"
+      },
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      }
+    ],
+    "exit": [
+      {
+        "en": "Exit focus mode",
+        "zh": "[待翻译] Exit focus mode"
+      }
+    ],
+    "focus": [
+      {
+        "en": "Exit focus mode",
+        "zh": "[待翻译] Exit focus mode"
+      }
+    ],
+    "expand": [
+      {
+        "en": "Expand All",
+        "zh": "[待翻译] Expand All"
+      },
+      {
+        "en": "Expand all",
+        "zh": "[待翻译] Expand all"
+      },
+      {
+        "en": "Expand sidebar",
+        "zh": "[待翻译] Expand sidebar"
+      }
+    ],
+    "extra": [
+      {
+        "en": "Extra Skills",
+        "zh": "Extra 技能"
+      }
+    ],
+    "fetch": [
+      {
+        "en": "Fetch web content",
+        "zh": "[待翻译] Fetch web content"
+      }
+    ],
+    "content": [
+      {
+        "en": "Fetch web content",
+        "zh": "[待翻译] Fetch web content"
+      }
+    ],
+    "filter": [
+      {
+        "en": "Filter",
+        "zh": "筛选"
+      },
+      {
+        "en": "Remove filter",
+        "zh": "移除 筛选"
+      },
+      {
+        "en": "Skills Filter",
+        "zh": "技能 筛选"
+      }
+    ],
+    "fri": [
+      {
+        "en": "Fri",
+        "zh": "[待翻译] Fri"
+      }
+    ],
+    "full": [
+      {
+        "en": "Full",
+        "zh": "[待翻译] Full"
+      },
+      {
+        "en": "Your full display name",
+        "zh": "Your full display 名称"
+      }
+    ],
+    "get": [
+      {
+        "en": "GET",
+        "zh": "[待翻译] GET"
+      }
+    ],
+    "access": [
+      {
+        "en": "Gateway Access",
+        "zh": "[待翻译] Gateway Access"
+      },
+      {
+        "en": "Tool Access",
+        "zh": "工具 Access"
+      }
+    ],
+    "token": [
+      {
+        "en": "Gateway Token",
+        "zh": "Gateway 令牌"
+      },
+      {
+        "en": "Token",
+        "zh": "令牌"
+      },
+      {
+        "en": "Token Usage",
+        "zh": "令牌 Usage"
+      },
+      {
+        "en": "Token with",
+        "zh": "令牌 with"
+      }
+    ],
+    "metadata": [
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      },
+      {
+        "en": "Metadata",
+        "zh": "[待翻译] Metadata"
+      }
+    ],
+    "version": [
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      }
+    ],
+    "information": [
+      {
+        "en": "Gateway metadata and version information",
+        "zh": "[待翻译] Gateway metadata and version information"
+      }
+    ],
+    "snapshots": [
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      }
+    ],
+    "events": [
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      }
+    ],
+    "manual": [
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      }
+    ],
+    "rpc": [
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      }
+    ],
+    "calls": [
+      {
+        "en": "Gateway snapshots, events, and manual RPC calls.",
+        "zh": "[待翻译] Gateway snapshots, events, and manual RPC calls."
+      },
+      {
+        "en": "No tool calls",
+        "zh": "No 工具 calls"
+      },
+      {
+        "en": "Tool Calls",
+        "zh": "工具 Calls"
+      }
+    ],
+    "status": [
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      },
+      {
+        "en": "Session status",
+        "zh": "会话 状态"
+      },
+      {
+        "en": "Status",
+        "zh": "状态"
+      }
+    ],
+    "points": [
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      }
+    ],
+    "fast": [
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      }
+    ],
+    "health": [
+      {
+        "en": "Gateway status, entry points, and a fast health read.",
+        "zh": "Gateway 状态, entry points, and a fast health read."
+      }
+    ],
+    "google": [
+      {
+        "en": "Google Chat",
+        "zh": "[待翻译] Google Chat"
+      }
+    ],
+    "html": [
+      {
+        "en": "HTML",
+        "zh": "[待翻译] HTML"
+      }
+    ],
+    "https": [
+      {
+        "en": "HTTPS URL to a banner image",
+        "zh": "[待翻译] HTTPS URL to a banner image"
+      },
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      }
+    ],
+    "your": [
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      },
+      {
+        "en": "Your full display name",
+        "zh": "Your full display 名称"
+      },
+      {
+        "en": "Your personal website",
+        "zh": "[待翻译] Your personal website"
+      }
+    ],
+    "picture": [
+      {
+        "en": "HTTPS URL to your profile picture",
+        "zh": "[待翻译] HTTPS URL to your profile picture"
+      },
+      {
+        "en": "Profile picture",
+        "zh": "[待翻译] Profile picture"
+      },
+      {
+        "en": "Profile picture preview",
+        "zh": "[待翻译] Profile picture preview"
+      }
+    ],
+    "hide": [
+      {
+        "en": "Hide Advanced",
+        "zh": "Hide 高级"
+      }
+    ],
+    "hooks": [
+      {
+        "en": "Hooks",
+        "zh": "[待翻译] Hooks"
+      },
+      {
+        "en": "Webhooks and event hooks",
+        "zh": "Webhooks and 事件 hooks"
+      }
+    ],
+    "identity": [
+      {
+        "en": "Identity Emoji",
+        "zh": "[待翻译] Identity Emoji"
+      },
+      {
+        "en": "Identity Name",
+        "zh": "Identity 名称"
+      },
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      }
+    ],
+    "emoji": [
+      {
+        "en": "Identity Emoji",
+        "zh": "[待翻译] Identity Emoji"
+      }
+    ],
+    "understanding": [
+      {
+        "en": "Image understanding",
+        "zh": "[待翻译] Image understanding"
+      }
+    ],
+    "import": [
+      {
+        "en": "Import from Relays",
+        "zh": "[待翻译] Import from Relays"
+      }
+    ],
+    "relays": [
+      {
+        "en": "Import from Relays",
+        "zh": "[待翻译] Import from Relays"
+      },
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      },
+      {
+        "en": "Profile published to relays.",
+        "zh": "[待翻译] Profile published to relays."
+      }
+    ],
+    "importing": [
+      {
+        "en": "Importing...",
+        "zh": "[待翻译] Importing..."
+      }
+    ],
+    "info": [
+      {
+        "en": "Info",
+        "zh": "信息"
+      }
+    ],
+    "inherit": [
+      {
+        "en": "Inherit default",
+        "zh": "[待翻译] Inherit default"
+      }
+    ],
+    "inspect": [
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      }
+    ],
+    "adjust": [
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      }
+    ],
+    "persession": [
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      }
+    ],
+    "defaults": [
+      {
+        "en": "Inspect active sessions and adjust per-session defaults.",
+        "zh": "Inspect active 会话 and adjust per-会话 defaults."
+      }
+    ],
+    "installed": [
+      {
+        "en": "Installed",
+        "zh": "[待翻译] Installed"
+      },
+      {
+        "en": "Installed Skills",
+        "zh": "Installed 技能"
+      }
+    ],
+    "invalid": [
+      {
+        "en": "Invalid interval amount.",
+        "zh": "[待翻译] Invalid interval amount."
+      },
+      {
+        "en": "Invalid run time.",
+        "zh": "[待翻译] Invalid run time."
+      }
+    ],
+    "interval": [
+      {
+        "en": "Invalid interval amount.",
+        "zh": "[待翻译] Invalid interval amount."
+      },
+      {
+        "en": "Tick Interval",
+        "zh": "[待翻译] Tick Interval"
+      }
+    ],
+    "amount": [
+      {
+        "en": "Invalid interval amount.",
+        "zh": "[待翻译] Invalid interval amount."
+      }
+    ],
+    "run": [
+      {
+        "en": "Invalid run time.",
+        "zh": "[待翻译] Invalid run time."
+      },
+      {
+        "en": "Run shell commands",
+        "zh": "[待翻译] Run shell commands"
+      }
+    ],
+    "time": [
+      {
+        "en": "Invalid run time.",
+        "zh": "[待翻译] Invalid run time."
+      },
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      },
+      {
+        "en": "Time zone",
+        "zh": "[待翻译] Time zone"
+      },
+      {
+        "en": "Usage Over Time",
+        "zh": "[待翻译] Usage Over Time"
+      }
+    ],
+    "json": [
+      {
+        "en": "JSON value",
+        "zh": "[待翻译] JSON value"
+      }
+    ],
+    "value": [
+      {
+        "en": "JSON value",
+        "zh": "[待翻译] JSON value"
+      },
+      {
+        "en": "Value passed to",
+        "zh": "[待翻译] Value passed to"
+      }
+    ],
+    "shortcuts": [
+      {
+        "en": "Key bindings and shortcuts",
+        "zh": "密钥 bindings and shortcuts"
+      }
+    ],
+    "link": [
+      {
+        "en": "LINK",
+        "zh": "[待翻译] LINK"
+      },
+      {
+        "en": "Link Whats",
+        "zh": "[待翻译] Link Whats"
+      }
+    ],
+    "last": [
+      {
+        "en": "Last Channels",
+        "zh": "[待翻译] Last Channels"
+      }
+    ],
+    "light": [
+      {
+        "en": "Light",
+        "zh": "[待翻译] Light"
+      },
+      {
+        "en": "Light theme",
+        "zh": "[待翻译] Light theme"
+      }
+    ],
+    "lightning": [
+      {
+        "en": "Lightning Address",
+        "zh": "[待翻译] Lightning Address"
+      }
+    ],
+    "address": [
+      {
+        "en": "Lightning Address",
+        "zh": "[待翻译] Lightning Address"
+      }
+    ],
+    "whats": [
+      {
+        "en": "Link Whats",
+        "zh": "[待翻译] Link Whats"
+      }
+    ],
+    "list": [
+      {
+        "en": "List agents",
+        "zh": "[待翻译] List agents"
+      },
+      {
+        "en": "List sessions",
+        "zh": "List 会话"
+      }
+    ],
+    "live": [
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      }
+    ],
+    "tail": [
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      }
+    ],
+    "file": [
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      },
+      {
+        "en": "Read file contents",
+        "zh": "[待翻译] Read file contents"
+      }
+    ],
+    "logs": [
+      {
+        "en": "Live tail of the gateway file logs.",
+        "zh": "Live tail of the gateway file 日志."
+      },
+      {
+        "en": "Logs",
+        "zh": "日志"
+      },
+      {
+        "en": "Search logs",
+        "zh": "搜索 日志"
+      }
+    ],
+    "load": [
+      {
+        "en": "Load approvals",
+        "zh": "[待翻译] Load approvals"
+      },
+      {
+        "en": "Load config",
+        "zh": "[待翻译] Load config"
+      }
+    ],
+    "approvals": [
+      {
+        "en": "Load approvals",
+        "zh": "[待翻译] Load approvals"
+      },
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "loading": [
+      {
+        "en": "Loading",
+        "zh": "加载中"
+      },
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      }
+    ],
+    "local": [
+      {
+        "en": "Local",
+        "zh": "[待翻译] Local"
+      }
+    ],
+    "levels": [
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      }
+    ],
+    "configuration": [
+      {
+        "en": "Log levels and output configuration",
+        "zh": "Log levels and output 配置"
+      },
+      {
+        "en": "Workspace, identity, and model configuration.",
+        "zh": "Workspace, identity, and 模型 配置."
+      }
+    ],
+    "logged": [
+      {
+        "en": "Logged out.",
+        "zh": "[待翻译] Logged out."
+      }
+    ],
+    "out": [
+      {
+        "en": "Logged out.",
+        "zh": "[待翻译] Logged out."
+      }
+    ],
+    "logging": [
+      {
+        "en": "Logging",
+        "zh": "[待翻译] Logging"
+      }
+    ],
+    "make": [
+      {
+        "en": "Make precise edits",
+        "zh": "[待翻译] Make precise edits"
+      }
+    ],
+    "precise": [
+      {
+        "en": "Make precise edits",
+        "zh": "[待翻译] Make precise edits"
+      }
+    ],
+    "edits": [
+      {
+        "en": "Make precise edits",
+        "zh": "[待翻译] Make precise edits"
+      }
+    ],
+    "manage": [
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      },
+      {
+        "en": "Manage background processes",
+        "zh": "[待翻译] Manage background processes"
+      },
+      {
+        "en": "Manage channels and settings.",
+        "zh": "Manage channels and 设置."
+      },
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      }
+    ],
+    "workspaces": [
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      }
+    ],
+    "tools": [
+      {
+        "en": "Manage agent workspaces, tools, and identities.",
+        "zh": "Manage 代理 workspaces, 工具, and identities."
+      },
+      {
+        "en": "Tools",
+        "zh": "工具"
+      },
+      {
+        "en": "Top Tools",
+        "zh": "Top 工具"
+      }
+    ],
+    "background": [
+      {
+        "en": "Manage background processes",
+        "zh": "[待翻译] Manage background processes"
+      }
+    ],
+    "processes": [
+      {
+        "en": "Manage background processes",
+        "zh": "[待翻译] Manage background processes"
+      }
+    ],
+    "availability": [
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      }
+    ],
+    "injection": [
+      {
+        "en": "Manage skill availability and API key injection.",
+        "zh": "Manage 技能 availability and API 密钥 injection."
+      }
+    ],
+    "matrix": [
+      {
+        "en": "Matrix",
+        "zh": "[待翻译] Matrix"
+      }
+    ],
+    "media": [
+      {
+        "en": "Media",
+        "zh": "[待翻译] Media"
+      }
+    ],
+    "memory": [
+      {
+        "en": "Memory",
+        "zh": "记忆"
+      },
+      {
+        "en": "Read memory files",
+        "zh": "Read 记忆 files"
+      }
+    ],
+    "handling": [
+      {
+        "en": "Message handling and routing settings",
+        "zh": "消息 handling and routing 设置"
+      }
+    ],
+    "messages": [
+      {
+        "en": "Messages",
+        "zh": "[待翻译] Messages"
+      },
+      {
+        "en": "Send messages",
+        "zh": "发送 messages"
+      }
+    ],
+    "messaging": [
+      {
+        "en": "Messaging",
+        "zh": "[待翻译] Messaging"
+      }
+    ],
+    "minimal": [
+      {
+        "en": "Minimal",
+        "zh": "[待翻译] Minimal"
+      }
+    ],
+    "missing": [
+      {
+        "en": "Missing",
+        "zh": "[待翻译] Missing"
+      }
+    ],
+    "mix": [
+      {
+        "en": "Model Mix",
+        "zh": "模型 Mix"
+      }
+    ],
+    "mon": [
+      {
+        "en": "Mon",
+        "zh": "[待翻译] Mon"
+      }
+    ],
+    "new": [
+      {
+        "en": "New",
+        "zh": "新建"
+      },
+      {
+        "en": "New Job",
+        "zh": "新建 Job"
+      },
+      {
+        "en": "New pattern",
+        "zh": "新建 pattern"
+      },
+      {
+        "en": "New session",
+        "zh": "新建 会话"
+      }
+    ],
+    "pattern": [
+      {
+        "en": "New pattern",
+        "zh": "新建 pattern"
+      }
+    ],
+    "data": [
+      {
+        "en": "No agent data",
+        "zh": "No 代理 data"
+      },
+      {
+        "en": "No channel data",
+        "zh": "No 频道 data"
+      },
+      {
+        "en": "No error data",
+        "zh": "No 错误 data"
+      },
+      {
+        "en": "No model data",
+        "zh": "No 模型 data"
+      },
+      {
+        "en": "No provider data",
+        "zh": "No 提供商 data"
+      },
+      {
+        "en": "Refresh chat data",
+        "zh": "刷新 chat data"
+      }
+    ],
+    "critical": [
+      {
+        "en": "No critical issues",
+        "zh": "[待翻译] No critical issues"
+      }
+    ],
+    "issues": [
+      {
+        "en": "No critical issues",
+        "zh": "[待翻译] No critical issues"
+      }
+    ],
+    "yet": [
+      {
+        "en": "No instances yet.",
+        "zh": "[待翻译] No instances yet."
+      },
+      {
+        "en": "No snapshot yet.",
+        "zh": "[待翻译] No snapshot yet."
+      }
+    ],
+    "presence": [
+      {
+        "en": "No presence payload.",
+        "zh": "[待翻译] No presence payload."
+      },
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      }
+    ],
+    "payload": [
+      {
+        "en": "No presence payload.",
+        "zh": "[待翻译] No presence payload."
+      }
+    ],
+    "provider": [
+      {
+        "en": "No provider data",
+        "zh": "No 提供商 data"
+      },
+      {
+        "en": "Provider",
+        "zh": "提供商"
+      }
+    ],
+    "section": [
+      {
+        "en": "No settings in this section",
+        "zh": "No 设置 in this section"
+      }
+    ],
+    "snapshot": [
+      {
+        "en": "No snapshot yet.",
+        "zh": "[待翻译] No snapshot yet."
+      }
+    ],
+    "tool": [
+      {
+        "en": "No tool calls",
+        "zh": "No 工具 calls"
+      },
+      {
+        "en": "Tool",
+        "zh": "工具"
+      },
+      {
+        "en": "Tool Access",
+        "zh": "工具 Access"
+      },
+      {
+        "en": "Tool Calls",
+        "zh": "工具 Calls"
+      },
+      {
+        "en": "Tool Output",
+        "zh": "工具 Output"
+      },
+      {
+        "en": "Tool Result",
+        "zh": "工具 Result"
+      },
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "nodes": [
+      {
+        "en": "Nodes",
+        "zh": "[待翻译] Nodes"
+      },
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      }
+    ],
+    "off": [
+      {
+        "en": "Off",
+        "zh": "[待翻译] Off"
+      }
+    ],
+    "offline": [
+      {
+        "en": "Offline",
+        "zh": "离线"
+      }
+    ],
+    "miss": [
+      {
+        "en": "On miss",
+        "zh": "[待翻译] On miss"
+      }
+    ],
+    "open": [
+      {
+        "en": "Open",
+        "zh": "打开"
+      }
+    ],
+    "openclaw": [
+      {
+        "en": "OpenClaw",
+        "zh": "[待翻译] OpenClaw"
+      }
+    ],
+    "other": [
+      {
+        "en": "Other Skills",
+        "zh": "Other 技能"
+      }
+    ],
+    "overview": [
+      {
+        "en": "Overview",
+        "zh": "[待翻译] Overview"
+      },
+      {
+        "en": "Usage Overview",
+        "zh": "[待翻译] Usage Overview"
+      }
+    ],
+    "post": [
+      {
+        "en": "POST",
+        "zh": "[待翻译] POST"
+      }
+    ],
+    "put": [
+      {
+        "en": "PUT",
+        "zh": "[待翻译] PUT"
+      }
+    ],
+    "paired": [
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      }
+    ],
+    "devices": [
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      }
+    ],
+    "capabilities": [
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      },
+      {
+        "en": "Skill packs and capabilities",
+        "zh": "技能 packs and capabilities"
+      }
+    ],
+    "command": [
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      }
+    ],
+    "exposure": [
+      {
+        "en": "Paired devices, capabilities, and command exposure.",
+        "zh": "[待翻译] Paired devices, capabilities, and command exposure."
+      }
+    ],
+    "peak": [
+      {
+        "en": "Peak Error",
+        "zh": "Peak 错误"
+      },
+      {
+        "en": "Peak Error Days",
+        "zh": "Peak 错误 Days"
+      },
+      {
+        "en": "Peak Error Hours",
+        "zh": "Peak 错误 Hours"
+      }
+    ],
+    "days": [
+      {
+        "en": "Peak Error Days",
+        "zh": "Peak 错误 Days"
+      }
+    ],
+    "hours": [
+      {
+        "en": "Peak Error Hours",
+        "zh": "Peak 错误 Hours"
+      }
+    ],
+    "turn": [
+      {
+        "en": "Per Turn",
+        "zh": "[待翻译] Per Turn"
+      }
+    ],
+    "pin": [
+      {
+        "en": "Pin",
+        "zh": "[待翻译] Pin"
+      },
+      {
+        "en": "Pin filters",
+        "zh": "[待翻译] Pin filters"
+      }
+    ],
+    "filters": [
+      {
+        "en": "Pin filters",
+        "zh": "[待翻译] Pin filters"
+      },
+      {
+        "en": "Unpin filters",
+        "zh": "[待翻译] Unpin filters"
+      }
+    ],
+    "pinned": [
+      {
+        "en": "Pinned",
+        "zh": "[待翻译] Pinned"
+      }
+    ],
+    "plugin": [
+      {
+        "en": "Plugin management and extensions",
+        "zh": "插件 management and extensions"
+      }
+    ],
+    "management": [
+      {
+        "en": "Plugin management and extensions",
+        "zh": "插件 management and extensions"
+      },
+      {
+        "en": "Session management and persistence",
+        "zh": "会话 management and persistence"
+      }
+    ],
+    "extensions": [
+      {
+        "en": "Plugin management and extensions",
+        "zh": "插件 management and extensions"
+      }
+    ],
+    "plugins": [
+      {
+        "en": "Plugins",
+        "zh": "[待翻译] Plugins"
+      }
+    ],
+    "point": [
+      {
+        "en": "Point expected",
+        "zh": "[待翻译] Point expected"
+      }
+    ],
+    "expected": [
+      {
+        "en": "Point expected",
+        "zh": "[待翻译] Point expected"
+      }
+    ],
+    "beacons": [
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      }
+    ],
+    "clients": [
+      {
+        "en": "Presence beacons from connected clients and nodes.",
+        "zh": "Presence beacons from 已连接 clients and nodes."
+      }
+    ],
+    "primary": [
+      {
+        "en": "Primary Model",
+        "zh": "Primary 模型"
+      }
+    ],
+    "imported": [
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      }
+    ],
+    "review": [
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      }
+    ],
+    "publish": [
+      {
+        "en": "Profile imported from relays. Review and publish.",
+        "zh": "[待翻译] Profile imported from relays. Review and publish."
+      },
+      {
+        "en": "Profile imported. Review and publish.",
+        "zh": "[待翻译] Profile imported. Review and publish."
+      },
+      {
+        "en": "Profile publish failed on all relays.",
+        "zh": "[待翻译] Profile publish failed on all relays."
+      }
+    ],
+    "published": [
+      {
+        "en": "Profile published to relays.",
+        "zh": "[待翻译] Profile published to relays."
+      }
+    ],
+    "public": [
+      {
+        "en": "Public Key",
+        "zh": "Public 密钥"
+      }
+    ],
+    "queue": [
+      {
+        "en": "Queue",
+        "zh": "[待翻译] Queue"
+      }
+    ],
+    "presets": [
+      {
+        "en": "Quick Presets",
+        "zh": "[待翻译] Quick Presets"
+      }
+    ],
+    "contents": [
+      {
+        "en": "Read file contents",
+        "zh": "[待翻译] Read file contents"
+      }
+    ],
+    "refresh": [
+      {
+        "en": "Refresh",
+        "zh": "刷新"
+      },
+      {
+        "en": "Refresh chat data",
+        "zh": "刷新 chat data"
+      }
+    ],
+    "reject": [
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      }
+    ],
+    "device": [
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      }
+    ],
+    "pairing": [
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      }
+    ],
+    "request": [
+      {
+        "en": "Reject this device pairing request?",
+        "zh": "[待翻译] Reject this device pairing request?"
+      }
+    ],
+    "reload": [
+      {
+        "en": "Reload",
+        "zh": "[待翻译] Reload"
+      },
+      {
+        "en": "Reload Config",
+        "zh": "[待翻译] Reload Config"
+      }
+    ],
+    "remove": [
+      {
+        "en": "Remove",
+        "zh": "移除"
+      },
+      {
+        "en": "Remove attachment",
+        "zh": "移除 attachment"
+      },
+      {
+        "en": "Remove entry",
+        "zh": "移除 entry"
+      },
+      {
+        "en": "Remove filter",
+        "zh": "移除 筛选"
+      },
+      {
+        "en": "Remove item",
+        "zh": "移除 item"
+      },
+      {
+        "en": "Remove queued message",
+        "zh": "移除 queued 消息"
+      }
+    ],
+    "item": [
+      {
+        "en": "Remove item",
+        "zh": "移除 item"
+      }
+    ],
+    "queued": [
+      {
+        "en": "Remove queued message",
+        "zh": "移除 queued 消息"
+      }
+    ],
+    "reset": [
+      {
+        "en": "Reset",
+        "zh": "重置"
+      },
+      {
+        "en": "Reset to default",
+        "zh": "重置 to default"
+      }
+    ],
+    "resolved": [
+      {
+        "en": "Resolved",
+        "zh": "[待翻译] Resolved"
+      }
+    ],
+    "shell": [
+      {
+        "en": "Run shell commands",
+        "zh": "[待翻译] Run shell commands"
+      }
+    ],
+    "runtime": [
+      {
+        "en": "Runtime",
+        "zh": "[待翻译] Runtime"
+      }
+    ],
+    "sat": [
+      {
+        "en": "Sat",
+        "zh": "[待翻译] Sat"
+      }
+    ],
+    "satoshi": [
+      {
+        "en": "Satoshi Nakamoto",
+        "zh": "[待翻译] Satoshi Nakamoto"
+      }
+    ],
+    "nakamoto": [
+      {
+        "en": "Satoshi Nakamoto",
+        "zh": "[待翻译] Satoshi Nakamoto"
+      }
+    ],
+    "save": [
+      {
+        "en": "Save",
+        "zh": "保存"
+      }
+    ],
+    "saving": [
+      {
+        "en": "Saving",
+        "zh": "保存中"
+      },
+      {
+        "en": "Saving...",
+        "zh": "保存中..."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "schedule": [
+      {
+        "en": "Schedule tasks",
+        "zh": "计划 tasks"
+      },
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      }
+    ],
+    "tasks": [
+      {
+        "en": "Schedule tasks",
+        "zh": "计划 tasks"
+      },
+      {
+        "en": "Scheduled tasks and automation",
+        "zh": "[待翻译] Scheduled tasks and automation"
+      }
+    ],
+    "wakeups": [
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      }
+    ],
+    "recurring": [
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      }
+    ],
+    "runs": [
+      {
+        "en": "Schedule wakeups and recurring agent runs.",
+        "zh": "计划 wakeups and recurring 代理 runs."
+      }
+    ],
+    "scheduled": [
+      {
+        "en": "Scheduled tasks and automation",
+        "zh": "[待翻译] Scheduled tasks and automation"
+      }
+    ],
+    "search": [
+      {
+        "en": "Search",
+        "zh": "搜索"
+      },
+      {
+        "en": "Search conversation",
+        "zh": "搜索 conversation"
+      },
+      {
+        "en": "Search logs",
+        "zh": "搜索 日志"
+      },
+      {
+        "en": "Search settings...",
+        "zh": "[待翻译] Search settings..."
+      },
+      {
+        "en": "Search skills",
+        "zh": "搜索 技能"
+      },
+      {
+        "en": "Search the web",
+        "zh": "搜索 the web"
+      },
+      {
+        "en": "Semantic search",
+        "zh": "Semantic 搜索"
+      }
+    ],
+    "conversation": [
+      {
+        "en": "Search conversation",
+        "zh": "搜索 conversation"
+      }
+    ],
+    "select": [
+      {
+        "en": "Select All",
+        "zh": "[待翻译] Select All"
+      },
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "node": [
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "before": [
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "exec": [
+      {
+        "en": "Select a node before loading exec approvals.",
+        "zh": "Select a node before 加载中 exec approvals."
+      },
+      {
+        "en": "Select a node before saving exec approvals.",
+        "zh": "Select a node before 保存中 exec approvals."
+      }
+    ],
+    "semantic": [
+      {
+        "en": "Semantic search",
+        "zh": "Semantic 搜索"
+      }
+    ],
+    "send": [
+      {
+        "en": "Send",
+        "zh": "发送"
+      },
+      {
+        "en": "Send messages",
+        "zh": "发送 messages"
+      },
+      {
+        "en": "Send to session",
+        "zh": "发送 to 会话"
+      }
+    ],
+    "service": [
+      {
+        "en": "Service discovery and networking",
+        "zh": "[待翻译] Service discovery and networking"
+      }
+    ],
+    "networking": [
+      {
+        "en": "Service discovery and networking",
+        "zh": "[待翻译] Service discovery and networking"
+      }
+    ],
+    "detail": [
+      {
+        "en": "Session Detail",
+        "zh": "会话 Detail"
+      }
+    ],
+    "history": [
+      {
+        "en": "Session history",
+        "zh": "会话 历史"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      }
+    ],
+    "persistence": [
+      {
+        "en": "Session management and persistence",
+        "zh": "会话 management and persistence"
+      }
+    ],
+    "setup": [
+      {
+        "en": "Setup Wizard",
+        "zh": "[待翻译] Setup Wizard"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      }
+    ],
+    "wizard": [
+      {
+        "en": "Setup Wizard",
+        "zh": "[待翻译] Setup Wizard"
+      },
+      {
+        "en": "Setup wizard state and history",
+        "zh": "Setup wizard state and 历史"
+      }
+    ],
+    "show": [
+      {
+        "en": "Show Advanced",
+        "zh": "Show 高级"
+      },
+      {
+        "en": "Show QR",
+        "zh": "[待翻译] Show QR"
+      }
+    ],
+    "signal": [
+      {
+        "en": "Signal",
+        "zh": "[待翻译] Signal"
+      }
+    ],
+    "packs": [
+      {
+        "en": "Skill packs and capabilities",
+        "zh": "技能 packs and capabilities"
+      }
+    ],
+    "slack": [
+      {
+        "en": "Slack",
+        "zh": "[待翻译] Slack"
+      }
+    ],
+    "sort": [
+      {
+        "en": "Sort",
+        "zh": "排序"
+      }
+    ],
+    "spawn": [
+      {
+        "en": "Spawn sub-agent",
+        "zh": "Spawn sub-代理"
+      }
+    ],
+    "subagent": [
+      {
+        "en": "Spawn sub-agent",
+        "zh": "Spawn sub-代理"
+      }
+    ],
+    "start": [
+      {
+        "en": "Start Date",
+        "zh": "[待翻译] Start Date"
+      }
+    ],
+    "stop": [
+      {
+        "en": "Stop",
+        "zh": "[待翻译] Stop"
+      }
+    ],
+    "success": [
+      {
+        "en": "Success",
+        "zh": "成功"
+      }
+    ],
+    "sun": [
+      {
+        "en": "Sun",
+        "zh": "[待翻译] Sun"
+      }
+    ],
+    "system": [
+      {
+        "en": "System",
+        "zh": "系统"
+      },
+      {
+        "en": "System Prompt",
+        "zh": "系统 Prompt"
+      },
+      {
+        "en": "System event text required.",
+        "zh": "系统 事件 text required."
+      },
+      {
+        "en": "System text",
+        "zh": "系统 text"
+      },
+      {
+        "en": "System theme",
+        "zh": "系统 theme"
+      }
+    ],
+    "text": [
+      {
+        "en": "System event text required.",
+        "zh": "系统 事件 text required."
+      },
+      {
+        "en": "System text",
+        "zh": "系统 text"
+      }
+    ],
+    "tailscale": [
+      {
+        "en": "Tailscale Serve",
+        "zh": "[待翻译] Tailscale Serve"
+      }
+    ],
+    "serve": [
+      {
+        "en": "Tailscale Serve",
+        "zh": "[待翻译] Tailscale Serve"
+      }
+    ],
+    "talk": [
+      {
+        "en": "Talk",
+        "zh": "[待翻译] Talk"
+      }
+    ],
+    "teams": [
+      {
+        "en": "Teams",
+        "zh": "[待翻译] Teams"
+      }
+    ],
+    "telegram": [
+      {
+        "en": "Telegram",
+        "zh": "[待翻译] Telegram"
+      }
+    ],
+    "tell": [
+      {
+        "en": "Tell people about yourself...",
+        "zh": "[待翻译] Tell people about yourself..."
+      }
+    ],
+    "people": [
+      {
+        "en": "Tell people about yourself...",
+        "zh": "[待翻译] Tell people about yourself..."
+      }
+    ],
+    "about": [
+      {
+        "en": "Tell people about yourself...",
+        "zh": "[待翻译] Tell people about yourself..."
+      }
+    ],
+    "yourself": [
+      {
+        "en": "Tell people about yourself...",
+        "zh": "[待翻译] Tell people about yourself..."
+      }
+    ],
+    "throughput": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "shows": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "minute": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "over": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      },
+      {
+        "en": "Usage Over",
+        "zh": "[待翻译] Usage Over"
+      },
+      {
+        "en": "Usage Over Time",
+        "zh": "[待翻译] Usage Over Time"
+      }
+    ],
+    "higher": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "better": [
+      {
+        "en": "Throughput shows tokens per minute over active time. Higher is better.",
+        "zh": "Throughput shows 令牌 per minute over active time. Higher is better."
+      }
+    ],
+    "thu": [
+      {
+        "en": "Thu",
+        "zh": "[待翻译] Thu"
+      }
+    ],
+    "tick": [
+      {
+        "en": "Tick Interval",
+        "zh": "[待翻译] Tick Interval"
+      }
+    ],
+    "zone": [
+      {
+        "en": "Time zone",
+        "zh": "[待翻译] Time zone"
+      }
+    ],
+    "today": [
+      {
+        "en": "Today",
+        "zh": "[待翻译] Today"
+      }
+    ],
+    "with": [
+      {
+        "en": "Token with",
+        "zh": "令牌 with"
+      }
+    ],
+    "written": [
+      {
+        "en": "Tokens written to cache",
+        "zh": "令牌 written to cache"
+      }
+    ],
+    "result": [
+      {
+        "en": "Tool Result",
+        "zh": "工具 Result"
+      }
+    ],
+    "top": [
+      {
+        "en": "Top Agents",
+        "zh": "[待翻译] Top Agents"
+      },
+      {
+        "en": "Top Channels",
+        "zh": "[待翻译] Top Channels"
+      },
+      {
+        "en": "Top Models",
+        "zh": "[待翻译] Top Models"
+      },
+      {
+        "en": "Top Providers",
+        "zh": "[待翻译] Top Providers"
+      },
+      {
+        "en": "Top Tools",
+        "zh": "Top 工具"
+      }
+    ],
+    "total": [
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "call": [
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "count": [
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "across": [
+      {
+        "en": "Total tool call count across sessions.",
+        "zh": "Total 工具 call count across 会话."
+      }
+    ],
+    "trustedhtml": [
+      {
+        "en": "TrustedHTML",
+        "zh": "[待翻译] TrustedHTML"
+      }
+    ],
+    "trustedscripturl": [
+      {
+        "en": "TrustedScriptURL",
+        "zh": "[待翻译] TrustedScriptURL"
+      }
+    ],
+    "trustedtypes": [
+      {
+        "en": "TrustedTypes policy",
+        "zh": "[待翻译] TrustedTypes policy"
+      }
+    ],
+    "tue": [
+      {
+        "en": "Tue",
+        "zh": "[待翻译] Tue"
+      }
+    ],
+    "utc": [
+      {
+        "en": "UTC",
+        "zh": "[待翻译] UTC"
+      }
+    ],
+    "unpin": [
+      {
+        "en": "Unpin filters",
+        "zh": "[待翻译] Unpin filters"
+      }
+    ],
+    "unsaved": [
+      {
+        "en": "Unsaved changes",
+        "zh": "[待翻译] Unsaved changes"
+      }
+    ],
+    "changes": [
+      {
+        "en": "Unsaved changes",
+        "zh": "[待翻译] Unsaved changes"
+      }
+    ],
+    "update": [
+      {
+        "en": "Update",
+        "zh": "[待翻译] Update"
+      }
+    ],
+    "updates": [
+      {
+        "en": "Updates",
+        "zh": "[待翻译] Updates"
+      }
+    ],
+    "use": [
+      {
+        "en": "Use All",
+        "zh": "[待翻译] Use All"
+      },
+      {
+        "en": "Use Channels",
+        "zh": "[待翻译] Use Channels"
+      },
+      {
+        "en": "Use Raw",
+        "zh": "[待翻译] Use Raw"
+      }
+    ],
+    "raw": [
+      {
+        "en": "Use Raw",
+        "zh": "[待翻译] Use Raw"
+      },
+      {
+        "en": "View Raw",
+        "zh": "[待翻译] View Raw"
+      }
+    ],
+    "user": [
+      {
+        "en": "User",
+        "zh": "用户"
+      },
+      {
+        "en": "User interface preferences",
+        "zh": "用户 interface 偏好设置"
+      }
+    ],
+    "interface": [
+      {
+        "en": "User interface preferences",
+        "zh": "用户 interface 偏好设置"
+      }
+    ],
+    "preferences": [
+      {
+        "en": "User interface preferences",
+        "zh": "用户 interface 偏好设置"
+      }
+    ],
+    "username": [
+      {
+        "en": "Username",
+        "zh": "[待翻译] Username"
+      }
+    ],
+    "view": [
+      {
+        "en": "View",
+        "zh": "[待翻译] View"
+      },
+      {
+        "en": "View Raw",
+        "zh": "[待翻译] View Raw"
+      }
+    ],
+    "voice": [
+      {
+        "en": "Voice and speech settings",
+        "zh": "Voice and speech 设置"
+      }
+    ],
+    "speech": [
+      {
+        "en": "Voice and speech settings",
+        "zh": "Voice and speech 设置"
+      }
+    ],
+    "server": [
+      {
+        "en": "Web server and API settings",
+        "zh": "Web server and API 设置"
+      }
+    ],
+    "webchat": [
+      {
+        "en": "WebChat",
+        "zh": "[待翻译] WebChat"
+      }
+    ],
+    "webhooks": [
+      {
+        "en": "Webhooks and event hooks",
+        "zh": "Webhooks and 事件 hooks"
+      }
+    ],
+    "website": [
+      {
+        "en": "Website",
+        "zh": "[待翻译] Website"
+      },
+      {
+        "en": "Your personal website",
+        "zh": "[待翻译] Your personal website"
+      }
+    ],
+    "wed": [
+      {
+        "en": "Wed",
+        "zh": "[待翻译] Wed"
+      }
+    ],
+    "whatsapp": [
+      {
+        "en": "WhatsApp",
+        "zh": "[待翻译] WhatsApp"
+      },
+      {
+        "en": "WhatsApp Login",
+        "zh": "[待翻译] WhatsApp Login"
+      },
+      {
+        "en": "WhatsApp QR",
+        "zh": "[待翻译] WhatsApp QR"
+      }
+    ],
+    "scheduling": [
+      {
+        "en": "Workspace and scheduling targets.",
+        "zh": "[待翻译] Workspace and scheduling targets."
+      }
+    ],
+    "targets": [
+      {
+        "en": "Workspace and scheduling targets.",
+        "zh": "[待翻译] Workspace and scheduling targets."
+      }
+    ],
+    "yes": [
+      {
+        "en": "Yes",
+        "zh": "[待翻译] Yes"
+      }
+    ],
+    "you": [
+      {
+        "en": "You",
+        "zh": "[待翻译] You"
+      }
+    ],
+    "personal": [
+      {
+        "en": "Your personal website",
+        "zh": "[待翻译] Your personal website"
+      },
+      {
+        "en": "Zalo Personal",
+        "zh": "[待翻译] Zalo Personal"
+      }
+    ],
+    "zalo": [
+      {
+        "en": "Zalo",
+        "zh": "[待翻译] Zalo"
+      },
+      {
+        "en": "Zalo Personal",
+        "zh": "[待翻译] Zalo Personal"
+      }
+    ]
+  }
+};
+
+// 快速翻译函数
+function translateText(text) {
+  if (!text || typeof text !== 'string') return text;
+  
+  // 1. 完全匹配
+  if (dataset.translations[text]) {
+    const translated = dataset.translations[text];
+    return translated.includes('[待翻译]') ? text : translated;
+  }
+  
+  // 2. 单词级替换
+  let result = text;
+  Object.keys(dataset.translations).forEach(en => {
+    if (en.includes(' ') && text.includes(en)) {
+      const zh = dataset.translations[en];
+      if (!zh.includes('[待翻译]')) {
+        result = result.replace(en, zh);
+      }
+    }
+  });
+  
+  return result !== text ? result : text;
+}
+
+// 使用示例
+console.log(translateText('Dashboard')); // 输出: 仪表板
+console.log(translateText('Save changes')); // 输出: 保存更改
+  
